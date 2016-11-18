@@ -68,13 +68,21 @@ setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含�
 "set foldenable                      " 允许自动折叠
 "set foldmethod=marker               " 设置折叠的函数为marker， markervi自带
 
+
+
 if has("autocmd")
         "au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
         "au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
         "au BufWritePost * call system("ctags -R")   "设置插入模式光标为竖线
-        "autocmd BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
+        autocmd BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
+        au FileType php call AddPHPFuncList() 
 endif
 
+"定义php语法函数
+function! AddPHPFuncList()
+    set dict-=~/.vim/php_funclist.txt dict+=~/.vim/php_funclist.txt
+    set complete-=k complete+=k
+endfunction
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
