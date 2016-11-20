@@ -8,15 +8,12 @@ syntax on                          "允许用指定语法高亮配色方案替�
 syntax sync fromstart
 
 " VIM 显示配置
-" 设置主题
-set background=dark
-let g:solarized_termcolors=16                      " powerline 插件状态栏风格
-let g:Powerline_colorsscheme='solarized256'        " powerline 设置状态栏主题风格
-
 " solarized 主题配色，需要安装vim-colors-solarized插件开启
 "Solarized VIM color scheme
 "colorscheme phd
+"colorscheme molokai 
 "colorscheme solarized
+set background=dark
 
 set laststatus=2                    " 总是显示状态栏
 set ruler                           " 显示光标当前位置
@@ -66,6 +63,9 @@ setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含�
 "set foldenable                      " 允许自动折叠
 "set foldmethod=marker               " 设置折叠的函数为marker， markervi自带
 
+set undodir=~/tmp/                  " 撤销缓存目录
+set undofile                        " 撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
+
 if has("autocmd")
         "au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
         "au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
@@ -76,90 +76,58 @@ endif
 
 "定义php语法函数
 function! AddPHPFuncList()
-    set dict-=~/.vim/php_funclist.txt dict+=~/.vim/php_funclist.txt
+    set dict-=~/Vim_lover/.vim/php_funclist.txt dict+=~/Vim_lover/.vim/php_funclist.txt
     set complete-=k complete+=k
 endfunction
 
-" set the runtime path to include Vundle and initialize
+" vundle管理插件
 set rtp+=$HOME/Vim_lover/.vim/bundle/Vundle.vim
 call vundle#begin('~/Vim_lover/.vim/bundle/')
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai.vim'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
-"Plugin 'SirVer/ultisnips'
-"Plugin 'dyng/ctrlsf.vim'
-"Plugin 'joonty/vdebug'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'file:///~/Vim_lover/.vim/bundle/YouCompleteMe'
 call vundle#end()            " required
 
-"定义快捷键的前缀键
-let mapleader=";"
+source ~/Vim_lover/.vim/config/plugin.vim
+source ~/Vim_lover/.vim/config/keyboard.vim
 
 " 保存当前工作环境，撤销配置，在vim新版, 才有用
 "set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
 "map <leaders>a :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存快捷键
 "map <leaders>r :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
-set undodir=~/tmp/                  " 撤销缓存目录
-set undofile                        " 撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
 
-"设置NERDTree的快捷键ctr+n,NERDTree相关命令
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeWinSize=16
-let NERDTreeShowHidden=1            " 显示隐藏文件
-let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件
-let NERDTreeMinimalUI=0            " 子窗口不显示冗余帮助信息
-let NERDTreeWinPos="left"           " 设置子窗口位置
-
-" 显示/隐藏 MiNiBufExplorer窗口
-map <Leader>f :MBEToggle<cr>
-"buffer 切换快捷键
-map <leader>a :MBEbn<cr>
-map <leader>d :MBEbp<cr>
-
-" IndentGuides 快捷键
-"let g:indent_guides_enable_on_vim_startup=1         " 随 vim 自启动 
-"let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进
-"let g:indent_guides_guide_size=2                                       " 色块宽度
-":nmap <silent> <Leader>i <Plug>IndentGuidesToggle    " 快捷键 i 开/关缩进可视化
-
-" 注释快捷键
-" <leader>cc 注释选中文本
-" <Leader>cu 取消选中注释
-" 快速查找
-
-nnoremap <f1> :!ctags -R<CR>
 
 " 替换快捷键
-"function! Replace(confirm,wholeword,replace)
-"    wa
-"    let flag = ''
-"    if a:confirm
-"        let flag .= 'gec'
-"    else
-"        let flag .= 'ge'
-"    endif
-"    let search = ''
-"    if a:wholeword
-"        let search .= '\<' . escape(expand('<cword>'),'/\.*$^~{') . '\>'
-"    else
-"        let search .= expand('<cword>')
-"    endif
-"    let replace = escape(a:replace, '/\&~')
-"    execute 'argdo %s/' . search . '/' .replace . '/' . flag . ' | update'
-"endfunction
-"
-"nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>
-"nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>
-"nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>
-"nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
-"nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
+function! Replace(confirm,wholeword,replace)
+    wa
+    let flag = ''
+    if a:confirm
+        let flag .= 'gec'
+    else
+        let flag .= 'ge'
+    endif
+    let search = ''
+    if a:wholeword
+        let search .= '\<' . escape(expand('<cword>'),'/\.*$^~{') . '\>'
+    else
+        let search .= expand('<cword>')
+    endif
+    let replace = escape(a:replace, '/\&~')
+    execute 'argdo %s/' . search . '/' .replace . '/' . flag . ' | update'
+endfunction
+
+nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>
+nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>
+nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>
+nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
+nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
 
 
 
