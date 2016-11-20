@@ -1,9 +1,7 @@
 filetype on                  " 开启文件类型侦测
-filetype plugin on           " 根据侦测到的不同类型加载对应的插件
+filetype plugin on           " 根据侦测到的不同类型加载对应的插件,  忽视插件改变缩进
 
-" 开启插件, 如果vim里面装了插件必须要开启此选项才可以用插件,
-" 开启文件类型检测
-filetype plugin indent on    " required
+filetype plugin indent on    " Vundle 必须开启, 加载vim自带和插件相应的语法和文件类型相关脚本
 
 syntax enable                      "开启语法高亮
 syntax on                          "允许用指定语法高亮配色方案替换默认方案
@@ -38,7 +36,7 @@ set termencoding=utf-8
 set nocompatible                    " be iMproved, required "不兼容vi模式
 set relativenumber                  " 相对行号
 set nu                              " 显示行号
-set numberwidth=3                   " 行号宽度
+set numberwidth=2                   " 行号宽度
 set autoindent                      " 自动对齐
 set expandtab                       " 将制表符扩展为空格
 set tabstop=4                       " 设置编辑时制表符占用空格数
@@ -68,8 +66,6 @@ setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含�
 "set foldenable                      " 允许自动折叠
 "set foldmethod=marker               " 设置折叠的函数为marker， markervi自带
 
-
-
 if has("autocmd")
         "au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
         "au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
@@ -85,8 +81,8 @@ function! AddPHPFuncList()
 endfunction
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=$HOME/Vim_lover/.vim/bundle/Vundle.vim
+call vundle#begin('~/Vim_lover/.vim/bundle/')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 Plugin 'altercation/vim-colors-solarized'
@@ -97,18 +93,11 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 "Plugin 'dyng/ctrlsf.vim'
 "Plugin 'joonty/vdebug'
 "Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
-
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
 
 "定义快捷键的前缀键
 let mapleader=";"
