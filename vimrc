@@ -7,9 +7,24 @@ syntax enable                      "开启语法高亮
 syntax on                          "允许用指定语法高亮配色方案替换默认方案
 syntax sync fromstart
 
+" 环境设置
+if has('gui_running') && has('gui_win32')
+    " 配置文件变量
+    let g:my_vimrc = $HOME.'\vimfiles\vimrc'
+    let g:vimrc_home = $HOME.'\vimfiles'
+
+    set guifont = Bitstream_Vera_Sans_Mono:h11:cANSI " 英文字体
+    set guifontwide = simhei:h11:cGB2312 " 英文字体
+elseif has('unix')
+    let g:my_vimrc = '/vagrant/data/Vim_lover/vimrc'
+    let g:vimrc_home = '/vagrant/data/Vim_lover'
+endif
+
+
 " VIM 显示配置
 " solarized 主题配色，需要安装vim-colors-solarized插件开启
 "Solarized VIM color scheme
+colorscheme default 
 "colorscheme phd
 "colorscheme molokai 
 "colorscheme solarized
@@ -17,8 +32,8 @@ set background=dark
 
 set laststatus=2                    " 总是显示状态栏
 set ruler                           " 显示光标当前位置
-set cursorline                      " 高亮显示当前行
-set cursorcolumn                    " 高亮显示当前列
+"set cursorline                      " 高亮显示当前行
+"set cursorcolumn                    " 高亮显示当前列
 
 set guifont=YaHei\ Consolas\ Hybrid\ 11.5
 set nowrap                          " 没有wrap文件
@@ -28,7 +43,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 
-"set completeopt -=preview
+set completeopt -=preview
 
 set nocompatible                    " be iMproved, required "不兼容vi模式
 set relativenumber                  " 相对行号
@@ -63,73 +78,32 @@ setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含�
 "set foldenable                      " 允许自动折叠
 "set foldmethod=marker               " 设置折叠的函数为marker， markervi自带
 
-set undodir=~/tmp/                  " 撤销缓存目录
-set undofile                        " 撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
-
-if has("autocmd")
-        "au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-        "au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-        "au BufWritePost * call system("ctags -R")   "设置插入模式光标为竖线
-        autocmd BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
-        au FileType php call AddPHPFuncList() 
+    " 撤销缓存目录,撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
+if exists("&undodir")
+    exec 'set undodir='.fnameescape(g:vimrc_home.'/tmp/')                 
+    exec 'set undofile'                        
 endif
 
-"定义php语法函数
-function! AddPHPFuncList()
-    set dict-=~/Vim_lover/.vim/php_funclist.txt dict+=~/Vim_lover/.vim/php_funclist.txt
-    set complete-=k complete+=k
-endfunction
-
 " vundle管理插件
-set rtp+=$HOME/Vim_lover/.vim/bundle/Vundle.vim
-call vundle#begin('~/Vim_lover/.vim/bundle/')
+set rtp+=/vagrant/data/Vim_lover/.vim/bundle/Vundle.vim
+"set rtp+= g:vimrc_home .'/.vim/bundle/Vundle.vim'
+call vundle#begin('/vagrant/data/Vim_lover/.vim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai.vim'
+"Plugin '/vagrant/data/Vim_lover/.vim/colors/molokai.vim'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
-Plugin 'file:///~/Vim_lover/.vim/bundle/YouCompleteMe'
+"Plugin 'file:///vagrant/data/Vim_lover/.vim/bundle/YouCompleteMe'
 call vundle#end()            " required
 
-source ~/Vim_lover/.vim/config/plugin.vim
-source ~/Vim_lover/.vim/config/keyboard.vim
+source /vagrant/data/Vim_lover/.vim/config/plugin.vim
+source /vagrant/data/Vim_lover/.vim/config/keyboard.vim
+source /vagrant/data/Vim_lover/.vim/config/func.vim
 
-" 保存当前工作环境，撤销配置，在vim新版, 才有用
-"set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
-"map <leaders>a :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存快捷键
-"map <leaders>r :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
-
-
-" 替换快捷键
-function! Replace(confirm,wholeword,replace)
-    wa
-    let flag = ''
-    if a:confirm
-        let flag .= 'gec'
-    else
-        let flag .= 'ge'
-    endif
-    let search = ''
-    if a:wholeword
-        let search .= '\<' . escape(expand('<cword>'),'/\.*$^~{') . '\>'
-    else
-        let search .= expand('<cword>')
-    endif
-    let replace = escape(a:replace, '/\&~')
-    execute 'argdo %s/' . search . '/' .replace . '/' . flag . ' | update'
-endfunction
-
-nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>
-nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>
-nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>
-nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
-nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
-
-
-
-
-
+    "au BufWritePost * call system("ctags -R")  " 保存文件后自动生成tag
+    au BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
+    au FileType php call AddPHPFuncList() 

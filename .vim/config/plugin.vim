@@ -8,6 +8,11 @@ let NERDTreeMinimalUI=0            " 子窗口不显示冗余帮助信息
 let NERDTreeWinPos="left"           " 设置子窗口位置
 
 
+"解决没有主题时highlight group not found: Normal报错问题
+let g:indent_guides_auto_colors = 0
+hi IndentGuidesOdd guibg=red ctermbg=3
+hi IndentGuidesEven guibg=red ctermbg=4
+
 " IndentGuides 快捷键
 let g:indent_guides_enable_on_vim_startup=1         " 随 vim 自启动 
 let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进

@@ -1,0 +1,1272 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+<C-n>	.vim/config/keyboard.vim	/^map <C-n> :NERDTreeToggle<CR>$/;"	m
+<Leader>R	.vim/config/keyboard.vim	/^nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>f	.vim/config/keyboard.vim	/^map <Leader>f :MBEToggle<cr>$/;"	m
+<Leader>ig	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^  nmap <silent><unique> <Leader>ig <Plug>IndentGuidesToggle$/;"	m
+<Leader>rc	.vim/config/keyboard.vim	/^nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rcw	.vim/config/keyboard.vim	/^nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rw	.vim/config/keyboard.vim	/^nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rwc	.vim/config/keyboard.vim	/^nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Plug>IndentGuidesDisable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^nnoremap <unique><script> <Plug>IndentGuidesDisable :IndentGuidesDisable<CR>$/;"	m
+<Plug>IndentGuidesEnable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^nnoremap <unique><script> <Plug>IndentGuidesEnable  :IndentGuidesEnable<CR>$/;"	m
+<Plug>IndentGuidesToggle	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^nnoremap <unique><script> <Plug>IndentGuidesToggle  :IndentGuidesToggle<CR>$/;"	m
+<Plug>ToggleBackground	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^inoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>a$/;"	m
+<Plug>ToggleBackground	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^nnoremap <unique> <script> <Plug>ToggleBackground <SID>TogBG$/;"	m
+<Plug>ToggleBackground	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^vnoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>gv$/;"	m
+<SID>TogBG	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^noremap <SID>TogBG  :call <SID>TogBG()<CR>$/;"	m
+<leader>a	.vim/config/keyboard.vim	/^map <leader>a :MBEbn<cr>$/;"	m
+<leader>d	.vim/config/keyboard.vim	/^map <leader>d :MBEbp<cr>$/;"	m
+<leader>tag	.vim/config/keyboard.vim	/^nnoremap <leader>tag :!ctags -R<CR>$/;"	m
+<leader>tt	.vim/config/keyboard.vim	/^nnoremap <leader>tt :source g:vimrc_home.'\/test\/test.vim'<CR>$/;"	m
+<leaders>c	.vim/config/keyboard.vim	/^map <leaders>c :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存快捷键$/;"	m
+<leaders>r	.vim/config/keyboard.vim	/^map <leaders>r :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境$/;"	m
+<plug>NERDCommenterAltDelims	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^nnoremap <plug>NERDCommenterAltDelims :call <SID>SwitchToAlternativeDelimiters(1)<cr>$/;"	m
+<plug>NERDCommenterInsert	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^inoremap <silent> <plug>NERDCommenterInsert <SPACE><BS><ESC>:call NERDComment('i', "insert")<CR>$/;"	m
+AddDivider	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:AddDivider(text, side, mode, colors, prev, curr, next) " {{{$/;"	f
+AddLeftDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AddLeftDelim(delim, theLine)$/;"	f
+AddLeftDelimAligned	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AddLeftDelimAligned(delim, theLine, alignIndx)$/;"	f
+AddPHPFuncList	.vim/config/func.vim	/^function! AddPHPFuncList()$/;"	f
+AddPHPFuncList	.vim/config/keyboard.vim	/^function! AddPHPFuncList()$/;"	f
+AddRightDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AddRightDelim(delim, theLine)$/;"	f
+AddRightDelimAligned	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AddRightDelimAligned(delim, theLine, alignIndx)$/;"	f
+AltMultipart	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AltMultipart()$/;"	f
+AltNested	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AltNested()$/;"	f
+AppendCommentToLine	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:AppendCommentToLine()$/;"	f
+AutoUpdate	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>AutoUpdate(curBufNum,force)$/;"	f
+Bookmark.AddBookmark	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.AddBookmark(name, path)$/;"	f
+Bookmark.BookmarkExistsFor	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.BookmarkExistsFor(name)$/;"	f
+Bookmark.BookmarkFor	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.BookmarkFor(name)$/;"	f
+Bookmark.BookmarkNames	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.BookmarkNames()$/;"	f
+Bookmark.Bookmarks	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.Bookmarks()$/;"	f
+Bookmark.CacheBookmarks	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.CacheBookmarks(silent)$/;"	f
+Bookmark.ClearAll	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.ClearAll()$/;"	f
+Bookmark.GetNodeForName	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.GetNodeForName(name, searchFromAbsoluteRoot, nerdtree)$/;"	f
+Bookmark.GetSelected	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.GetSelected()$/;"	f
+Bookmark.InvalidBookmarks	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.InvalidBookmarks()$/;"	f
+Bookmark.New	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.New(name, path)$/;"	f
+Bookmark.Sort	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.Sort()$/;"	f
+Bookmark.ToRoot	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.ToRoot(name, nerdtree)$/;"	f
+Bookmark.Write	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.Write()$/;"	f
+Bookmark.activate	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.activate(nerdtree, ...)$/;"	f
+Bookmark.compareTo	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.compareTo(otherbookmark)$/;"	f
+Bookmark.delete	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.delete()$/;"	f
+Bookmark.getNode	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.getNode(nerdtree, searchFromAbsoluteRoot)$/;"	f
+Bookmark.mustExist	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.mustExist()$/;"	f
+Bookmark.open	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.open(nerdtree, ...)$/;"	f
+Bookmark.openInNewTab	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.openInNewTab(options)$/;"	f
+Bookmark.setPath	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.setPath(path)$/;"	f
+Bookmark.str	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.str()$/;"	f
+Bookmark.toRoot	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.toRoot(nerdtree)$/;"	f
+Bookmark.validate	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^function! s:Bookmark.validate()$/;"	f
+BufAddHandler	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BufAddHandler()$/;"	f
+BufDeleteHandler	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BufDeleteHandler()$/;"	f
+BufEnterHandler	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BufEnterHandler() abort$/;"	f
+BuildAllBufferDicts	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BuildAllBufferDicts()$/;"	f
+BuildBufferFinalDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BuildBufferFinalDict(arg,deleted)$/;"	f
+BuildBufferList	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BuildBufferList(curBufNum)$/;"	f
+BuildBufferPathSignDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BuildBufferPathSignDict(bufnrs, ...)$/;"	f
+BuildBufferUniqNameDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>BuildBufferUniqNameDict(bufnrs)$/;"	f
+Bundle	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=+                                                Bundle        call vundle#config#bundle(<args>)$/;"	c
+BundleClean	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang                                          BundleClean   PluginClean<bang>$/;"	c
+BundleDocs	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=0                                                BundleDocs    PluginDocs$/;"	c
+BundleInstall	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete BundleInstall PluginInstall<bang> <args>$/;"	c
+BundleList	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=0 -bang                                          BundleList    PluginList<bang>$/;"	c
+BundleSearch	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete BundleSearch  PluginSearch<bang> <args>$/;"	c
+BundleUpdate	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com!                                                         BundleUpdate  PluginInstall!$/;"	c
+CMiniBufExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! CMiniBufExplorer echoe 'CMiniBufExplorer is depreciated, please use MBEClose instead.'$/;"	c
+CanCommentLine	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CanCommentLine(forceNested, lineNum)$/;"	f
+CanPlaceCursor	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CanPlaceCursor(line, col)$/;"	f
+CanSexyCommentLines	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CanSexyCommentLines(topline, bottomline)$/;"	f
+CanToggleCommentLine	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CanToggleCommentLine(forceNested, lineNum)$/;"	f
+CheckConditions	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! s:CheckConditions(params) " {{{$/;"	f
+CommentBlock	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentBlock(top, bottom, lSide, rSide, forceNested )$/;"	f
+CommentLines	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentLines(forceNested, align, firstLine, lastLine)$/;"	f
+CommentLinesMinimal	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentLinesMinimal(firstLine, lastLine)$/;"	f
+CommentLinesSexy	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentLinesSexy(topline, bottomline)$/;"	f
+CommentLinesToggle	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentLinesToggle(forceNested, firstLine, lastLine)$/;"	f
+CommentRegion	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CommentRegion(topLine, topCol, bottomLine, bottomCol, forceNested)$/;"	f
+ConvertLeadingSpacesToTabs	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ConvertLeadingSpacesToTabs(line)$/;"	f
+ConvertLeadingTabsToSpaces	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ConvertLeadingTabsToSpaces(line)$/;"	f
+ConvertLeadingWhiteSpace	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ConvertLeadingWhiteSpace(line)$/;"	f
+CountNonESCedOccurances	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CountNonESCedOccurances(str, searchstr, escChar)$/;"	f
+CreateBufferUniqName	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>CreateBufferUniqName(bufNum)$/;"	f
+CreateDelimMapFromCms	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:CreateDelimMapFromCms()$/;"	f
+CreateMaps	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function! s:CreateMaps(modes, target, desc, combo)$/;"	f
+CreateWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>CreateWindow(bufName, vSplit, brSplit, forceEdge, isPluginWindow, doDebug)$/;"	f
+Creator.BufNamePrefix	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.BufNamePrefix()$/;"	f
+Creator.CreateMirror	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.CreateMirror()$/;"	f
+Creator.CreateTabTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.CreateTabTree(name)$/;"	f
+Creator.CreateWindowTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.CreateWindowTree(dir)$/;"	f
+Creator.New	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.New()$/;"	f
+Creator.ToggleTabTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.ToggleTabTree(dir)$/;"	f
+Creator._bindMappings	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._bindMappings()$/;"	f
+Creator._broadcastInitEvent	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._broadcastInitEvent()$/;"	f
+Creator._createNERDTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._createNERDTree(path, type)$/;"	f
+Creator._createTreeWin	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._createTreeWin()$/;"	f
+Creator._isBufHidden	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._isBufHidden(nr)$/;"	f
+Creator._nextBufferName	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._nextBufferName()$/;"	f
+Creator._nextBufferNumber	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._nextBufferNumber()$/;"	f
+Creator._pathForString	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._pathForString(str)$/;"	f
+Creator._removeTreeBufForTab	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._removeTreeBufForTab()$/;"	f
+Creator._setCommonBufOptions	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._setCommonBufOptions()$/;"	f
+Creator._setupStatusline	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._setupStatusline()$/;"	f
+Creator._tabpagevar	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._tabpagevar(tabnr, var)$/;"	f
+Creator._uniq	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator._uniq(list)$/;"	f
+Creator.createMirror	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.createMirror()$/;"	f
+Creator.createTabTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.createTabTree(name)$/;"	f
+Creator.createWindowTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.createWindowTree(dir)$/;"	f
+Creator.toggleTabTree	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^function! s:Creator.toggleTabTree(dir)$/;"	f
+Cterm2GUI	.vim/bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! s:Cterm2GUI(cterm) " {{{$/;"	f
+CycleBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>CycleBuffer(forward,...)$/;"	f
+DEBUG	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>DEBUG(msg, level)$/;"	f
+DeleteBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>DeleteBuffer(action,bang,...)$/;"	f
+DetachBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>DetachBuffer(bufNum)$/;"	f
+DisplayBuffers	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>DisplayBuffers(curBufNum)$/;"	f
+DoesBlockHaveDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:DoesBlockHaveDelim(delim, top, bottom)$/;"	f
+DoesBlockHaveMultipartDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:DoesBlockHaveMultipartDelim(top, bottom)$/;"	f
+Esc	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:Esc(str)$/;"	f
+Event.New	.vim/bundle/nerdtree/lib/nerdtree/event.vim	/^function! s:Event.New(nerdtree, subject, action, params) abort$/;"	f
+FindBoundingLinesOfSexyCom	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:FindBoundingLinesOfSexyCom(lineNum)$/;"	f
+FindCreateWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>FindCreateWindow(bufName, vSplit, brSplit, forceEdge, isPluginWindow, doDebug)$/;"	f
+FindDelimiterIndex	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:FindDelimiterIndex(delimiter, line)$/;"	f
+FindWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>FindWindow(bufName, doDebug)$/;"	f
+FlagSet.New	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.New()$/;"	f
+FlagSet._flagsForScope	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet._flagsForScope(scope)$/;"	f
+FlagSet.addFlag	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.addFlag(scope, flag)$/;"	f
+FlagSet.clearFlags	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.clearFlags(scope)$/;"	f
+FlagSet.removeFlag	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.removeFlag(scope, flag)$/;"	f
+FlagSet.renderToString	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^function! s:FlagSet.renderToString()$/;"	f
+FocusExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>FocusExplorer()$/;"	f
+GetActiveBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>GetActiveBuffer()$/;"	f
+GetPhpIndent	.vim/bundle/php.vim/indent/php.vim	/^function GetPhpIndent()$/;"	f
+GetSelectedBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>GetSelectedBuffer()$/;"	f
+GetSexyComLeft	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:GetSexyComLeft(space, esc)$/;"	f
+GetSexyComMarker	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:GetSexyComMarker(space, esc)$/;"	f
+GetSexyComRight	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:GetSexyComRight(space, esc)$/;"	f
+HasCStyleComments	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:HasCStyleComments()$/;"	f
+HasEligibleBuffers	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>HasEligibleBuffers()$/;"	f
+HasLeadingTabs	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:HasLeadingTabs(...)$/;"	f
+HasMultipartDelims	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:HasMultipartDelims()$/;"	f
+HlCreate	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:HlCreate(hl) " {{{$/;"	f
+HlExists	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:HlExists(hl) " {{{$/;"	f
+IndentGuidesDisable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^command! -bar IndentGuidesDisable call s:IndentGuidesDisable()$/;"	c
+IndentGuidesDisable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^function! s:IndentGuidesDisable()$/;"	f
+IndentGuidesEnable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^command! -bar IndentGuidesEnable  call s:IndentGuidesEnable()$/;"	c
+IndentGuidesEnable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^function! s:IndentGuidesEnable()$/;"	f
+IndentGuidesToggle	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^command! -bar IndentGuidesToggle  call s:IndentGuidesToggle()$/;"	c
+IndentGuidesToggle	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^function! s:IndentGuidesToggle()$/;"	f
+InitVariable	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:InitVariable(var, value)$/;"	f
+InitVariable	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^function s:InitVariable(var, value)$/;"	f
+InvertComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:InvertComment(firstLine, lastLine)$/;"	f
+IsBufferIgnored	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>IsBufferIgnored(buf)$/;"	f
+IsCommented	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsCommented(left, right, line)$/;"	f
+IsCommentedFromStartOfLine	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsCommentedFromStartOfLine(left, line)$/;"	f
+IsCommentedNormOrSexy	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsCommentedNormOrSexy(lineNum)$/;"	f
+IsCommentedOutermost	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsCommentedOutermost(left, right, leftAlt, rightAlt, line)$/;"	f
+IsDelimValid	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsDelimValid(delimiter, delIndx, line)$/;"	f
+IsEscaped	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsEscaped(str, indx, escChar)$/;"	f
+IsInSexyComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsInSexyComment(line)$/;"	f
+IsNumEven	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsNumEven(num)$/;"	f
+IsSexyComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:IsSexyComment(topline, bottomline)$/;"	f
+KeyMap.Add	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.Add(keymap)$/;"	f
+KeyMap.All	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.All()$/;"	f
+KeyMap.BindAll	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.BindAll()$/;"	f
+KeyMap.Create	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.Create(options)$/;"	f
+KeyMap.FindFor	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.FindFor(key, scope)$/;"	f
+KeyMap.Invoke	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.Invoke(key)$/;"	f
+KeyMap.Remove	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.Remove(key, scope)$/;"	f
+KeyMap.bind	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.bind()$/;"	f
+KeyMap.invoke	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^function! s:KeyMap.invoke(...)$/;"	f
+LastIndexOfDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:LastIndexOfDelim(delim, str)$/;"	f
+Left	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:Left(...)$/;"	f
+LeftMostIndx	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:LeftMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)$/;"	f
+ListAdd	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ListAdd(list,val)$/;"	f
+ListPop	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ListPop(list,val)$/;"	f
+ListPush	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ListPush(list,val)$/;"	f
+MBEClose	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEClose     let t:skipEligibleBuffersCheck = 0 | call <SID>StopExplorer('<bang>' == '!')$/;"	c
+MBECloseAll	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBECloseAll  tabdo let t:skipEligibleBuffersCheck = 0 | call <SID>StopExplorer('<bang>' == '!') | let s:TabsMBEState = 0$/;"	c
+MBEDeleteBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>MBEDeleteBuffer()$/;"	f
+MBEFocus	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEFocus           call <SID>FocusExplorer()$/;"	c
+MBEFocusAll	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEFocusAll        tabdo call <SID>FocusExplorer()$/;"	c
+MBEOpen	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEOpen      let t:skipEligibleBuffersCheck = 1 | if '<bang>' == '!' | call <SID>StopExplorer(0) | endif | call <SID>StartExplorer(bufnr("%"))$/;"	c
+MBEOpenAll	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEOpenAll   tabdo let t:skipEligibleBuffersCheck = 1 | if '<bang>' == '!' | call <SID>StopExplorer(0) | endif | call <SID>StartExplorer(bufnr("%")) | let s:TabsMBEState = 1$/;"	c
+MBESelectBuffer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>MBESelectBuffer(split)$/;"	f
+MBEToggle	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEToggle    call <SID>ToggleExplorer(0,'<bang>'=='!')$/;"	c
+MBEToggleAll	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEToggleAll call <SID>ToggleExplorer(1,'<bang>'=='!')$/;"	c
+MBEToggleMRU	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEToggleMRU       call <SID>ToggleMRU()$/;"	c
+MBEToggleMRUAll	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang MBEToggleMRUAll    tabdo call <SID>ToggleMRU()$/;"	c
+MBEbb	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEbb call <SID>CycleBuffer(0,1)$/;"	c
+MBEbd	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang -nargs=* MBEbd call <SID>DeleteBuffer(0,'<bang>'=='!',<f-args>)$/;"	c
+MBEbf	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEbf call <SID>CycleBuffer(1,1)$/;"	c
+MBEbn	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEbn call <SID>CycleBuffer(1)$/;"	c
+MBEbp	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MBEbp call <SID>CycleBuffer(0)$/;"	c
+MBEbun	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang -nargs=* MBEbun call <SID>DeleteBuffer(2,'<bang>'=='!',<f-args>)$/;"	c
+MBEbw	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! -bang -nargs=* MBEbw call <SID>DeleteBuffer(1,'<bang>'=='!',<f-args>)$/;"	c
+MRUCmp	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>MRUCmp(tab1, tab2)$/;"	f
+MenuController.New	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController.New(menuItems)$/;"	f
+MenuController._allIndexesFor	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._allIndexesFor(shortcut)$/;"	f
+MenuController._current	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._current()$/;"	f
+MenuController._cursorDown	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._cursorDown()$/;"	f
+MenuController._cursorUp	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._cursorUp()$/;"	f
+MenuController._echoPrompt	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._echoPrompt()$/;"	f
+MenuController._handleKeypress	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._handleKeypress(key)$/;"	f
+MenuController._nextIndexFor	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._nextIndexFor(shortcut)$/;"	f
+MenuController._restoreOptions	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._restoreOptions()$/;"	f
+MenuController._saveOptions	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._saveOptions()$/;"	f
+MenuController._setCmdheight	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController._setCmdheight()$/;"	f
+MenuController.showMenu	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^function! s:MenuController.showMenu()$/;"	f
+MenuItem.All	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.All()$/;"	f
+MenuItem.AllEnabled	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.AllEnabled()$/;"	f
+MenuItem.Create	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.Create(options)$/;"	f
+MenuItem.CreateSeparator	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.CreateSeparator(options)$/;"	f
+MenuItem.CreateSubmenu	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.CreateSubmenu(options)$/;"	f
+MenuItem.enabled	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.enabled()$/;"	f
+MenuItem.execute	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.execute()$/;"	f
+MenuItem.isSeparator	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.isSeparator()$/;"	f
+MenuItem.isSubmenu	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^function! s:MenuItem.isSubmenu()$/;"	f
+MiniBufExpl	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^augroup MiniBufExpl$/;"	a
+MiniBufExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! MiniBufExplorer echoe 'MiniBufExplorer is depreciated, please use MBEOpen instead.'$/;"	c
+Multipart	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:Multipart()$/;"	f
+NERDComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function! NERDComment(mode, type) range$/;"	f
+NERDCommentIsLineCommented	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function! NERDCommentIsLineCommented(lineNo)$/;"	f
+NERDCommenter	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^augroup NERDCommenter$/;"	a
+NERDTree	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^augroup NERDTree$/;"	a
+NERDTree.AddPathFilter	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.AddPathFilter(callback)$/;"	f
+NERDTree.Close	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.Close()$/;"	f
+NERDTree.CloseIfQuitOnOpen	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.CloseIfQuitOnOpen()$/;"	f
+NERDTree.CursorToBookmarkTable	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.CursorToBookmarkTable()$/;"	f
+NERDTree.CursorToTreeWin	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.CursorToTreeWin()$/;"	f
+NERDTree.ExistsForBuf	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.ExistsForBuf()$/;"	f
+NERDTree.ExistsForTab	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.ExistsForTab()$/;"	f
+NERDTree.ForCurrentBuf	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.ForCurrentBuf()$/;"	f
+NERDTree.ForCurrentTab	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.ForCurrentTab()$/;"	f
+NERDTree.GetWinNum	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.GetWinNum()$/;"	f
+NERDTree.IsOpen	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.IsOpen()$/;"	f
+NERDTree.MustBeOpen	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.MustBeOpen()$/;"	f
+NERDTree.New	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.New(path, type)$/;"	f
+NERDTree.PathFilters	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.PathFilters()$/;"	f
+NERDTree.changeRoot	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.changeRoot(node)$/;"	f
+NERDTree.getRoot	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.getRoot()$/;"	f
+NERDTree.isTabTree	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.isTabTree()$/;"	f
+NERDTree.isWinTree	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.isWinTree()$/;"	f
+NERDTree.previousBuf	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.previousBuf()$/;"	f
+NERDTree.render	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.render()$/;"	f
+NERDTree.setPreviousBuf	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^function! s:NERDTree.setPreviousBuf(bnum)$/;"	f
+NERDTreeAddKeyMap	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddKeyMap(options)$/;"	f
+NERDTreeAddMenuItem	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddMenuItem(options)$/;"	f
+NERDTreeAddMenuSeparator	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddMenuSeparator(...)$/;"	f
+NERDTreeAddNode	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeAddNode()$/;"	f
+NERDTreeAddPathFilter	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddPathFilter(callback)$/;"	f
+NERDTreeAddSubmenu	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeAddSubmenu(options)$/;"	f
+NERDTreeAutoDeleteBuffer	.vim/config/plugin.vim	/^let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件$/;"	v
+NERDTreeCWD	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeCWD()$/;"	f
+NERDTreeCopyNode	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeCopyNode()$/;"	f
+NERDTreeDeleteNode	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeDeleteNode()$/;"	f
+NERDTreeExecFile	.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^function! NERDTreeExecFile()$/;"	f
+NERDTreeExecFileActive	.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^function! NERDTreeExecFileActive()$/;"	f
+NERDTreeExecuteFile	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeExecuteFile()$/;"	f
+NERDTreeFocus	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeFocus()$/;"	f
+NERDTreeHijackNetrw	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^    augroup NERDTreeHijackNetrw$/;"	a
+NERDTreeListNode	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeListNode()$/;"	f
+NERDTreeListNodeWin32	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeListNodeWin32()$/;"	f
+NERDTreeMinimalUI	.vim/config/plugin.vim	/^let NERDTreeMinimalUI=0            " 子窗口不显示冗余帮助信息$/;"	v
+NERDTreeMoveNode	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeMoveNode()$/;"	f
+NERDTreeQuickLook	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeQuickLook()$/;"	f
+NERDTreeRender	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! NERDTreeRender()$/;"	f
+NERDTreeRevealInFinder	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! NERDTreeRevealInFinder()$/;"	f
+NERDTreeShowHidden	.vim/config/plugin.vim	/^let NERDTreeShowHidden=1            " 显示隐藏文件$/;"	v
+NERDTreeWinPos	.vim/config/plugin.vim	/^let NERDTreeWinPos="left"           " 设置子窗口位置$/;"	v
+NERDTreeWinSize	.vim/config/plugin.vim	/^let NERDTreeWinSize=16$/;"	v
+NameCmp	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>NameCmp(tab1, tab2)$/;"	f
+NerdEcho	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:NerdEcho(msg, typeOfMsg)$/;"	f
+Nested	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:Nested()$/;"	f
+NextNormalWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>NextNormalWindow()$/;"	f
+Notifier.AddListener	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.AddListener(event, funcname)$/;"	f
+Notifier.GetListenersForEvent	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.GetListenersForEvent(name)$/;"	f
+Notifier.GetListenersMap	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.GetListenersMap()$/;"	f
+Notifier.NotifyListeners	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.NotifyListeners(event, path, nerdtree, params)$/;"	f
+NumLinesInBuf	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:NumLinesInBuf()$/;"	f
+NumberOfLeadingTabs	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:NumberOfLeadingTabs(s)$/;"	f
+Opener.New	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener.New(path, opts)$/;"	f
+Opener._bufInWindows	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._bufInWindows(bnum)$/;"	f
+Opener._checkToCloseTree	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._checkToCloseTree(newtab)$/;"	f
+Opener._firstUsableWindow	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._firstUsableWindow()$/;"	f
+Opener._gotoTargetWin	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._gotoTargetWin()$/;"	f
+Opener._isWindowUsable	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._isWindowUsable(winnumber)$/;"	f
+Opener._newSplit	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._newSplit()$/;"	f
+Opener._newVSplit	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._newVSplit()$/;"	f
+Opener._openDirectory	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._openDirectory(node)$/;"	f
+Opener._openFile	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._openFile()$/;"	f
+Opener._previousWindow	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._previousWindow()$/;"	f
+Opener._restoreCursorPos	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._restoreCursorPos()$/;"	f
+Opener._reuseWindow	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._reuseWindow()$/;"	f
+Opener._saveCursorPos	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener._saveCursorPos()$/;"	f
+Opener.open	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^function! s:Opener.open(target)$/;"	f
+ParseSegments	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! s:ParseSegments(mode, side, segments, ...) " {{{$/;"	f
+Path.AbsolutePathFor	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.AbsolutePathFor(str)$/;"	f
+Path.CopyingSupported	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.CopyingSupported()$/;"	f
+Path.Create	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.Create(fullpath)$/;"	f
+Path.JoinPathStrings	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.JoinPathStrings(...)$/;"	f
+Path.New	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.New(path)$/;"	f
+Path.Resolve	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.Resolve(path)$/;"	f
+Path.Slash	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.Slash()$/;"	f
+Path.WinToUnixPath	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.WinToUnixPath(pathstr)$/;"	f
+Path._escChars	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._escChars()$/;"	f
+Path._ignorePatternMatches	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._ignorePatternMatches(pattern)$/;"	f
+Path._str	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._str()$/;"	f
+Path._strForCd	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._strForCd()$/;"	f
+Path._strForEdit	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._strForEdit()$/;"	f
+Path._strForGlob	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._strForGlob()$/;"	f
+Path._strForUI	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path._strForUI()$/;"	f
+Path.bookmarkNames	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.bookmarkNames()$/;"	f
+Path.cacheDisplayString	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.cacheDisplayString() abort$/;"	f
+Path.changeToDir	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.changeToDir()$/;"	f
+Path.compareTo	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.compareTo(path)$/;"	f
+Path.copy	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.copy(dest)$/;"	f
+Path.copyingWillOverwrite	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.copyingWillOverwrite(dest)$/;"	f
+Path.createParentDirectories	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.createParentDirectories(path)$/;"	f
+Path.delete	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.delete()$/;"	f
+Path.displayString	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.displayString()$/;"	f
+Path.edit	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.edit()$/;"	f
+Path.equals	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.equals(path)$/;"	f
+Path.exists	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.exists()$/;"	f
+Path.extractDriveLetter	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.extractDriveLetter(fullpath)$/;"	f
+Path.getDir	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.getDir()$/;"	f
+Path.getLastPathComponent	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.getLastPathComponent(dirSlash)$/;"	f
+Path.getParent	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.getParent()$/;"	f
+Path.getSortKey	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.getSortKey()$/;"	f
+Path.getSortOrderIndex	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.getSortOrderIndex()$/;"	f
+Path.ignore	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.ignore(nerdtree)$/;"	f
+Path.isAncestor	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.isAncestor(path)$/;"	f
+Path.isUnder	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.isUnder(path)$/;"	f
+Path.isUnixHiddenFile	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.isUnixHiddenFile()$/;"	f
+Path.isUnixHiddenPath	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.isUnixHiddenPath()$/;"	f
+Path.readInfoFromDisk	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.readInfoFromDisk(fullpath)$/;"	f
+Path.refresh	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.refresh(nerdtree)$/;"	f
+Path.refreshFlags	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.refreshFlags(nerdtree)$/;"	f
+Path.rename	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.rename(newPath)$/;"	f
+Path.str	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.str(...)$/;"	f
+Path.strTrunk	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.strTrunk()$/;"	f
+Path.tabnr	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^function! s:Path.tabnr()$/;"	f
+Pl#ClearCache	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#ClearCache() " {{{$/;"	f
+Pl#Colorscheme#Apply	.vim/bundle/vim-powerline/autoload/Pl/Colorscheme.vim	/^function! Pl#Colorscheme#Apply(colorscheme, buffer_segments) " {{{$/;"	f
+Pl#Colorscheme#Init	.vim/bundle/vim-powerline/autoload/Pl/Colorscheme.vim	/^function! Pl#Colorscheme#Init(hi) " {{{$/;"	f
+Pl#Hi#Allocate	.vim/bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! Pl#Hi#Allocate(colors) " {{{$/;"	f
+Pl#Hi#Segments	.vim/bundle/vim-powerline/autoload/Pl/Hi.vim	/^function! Pl#Hi#Segments(segments, mode_colors) " {{{$/;"	f
+Pl#Load	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#Load() " {{{$/;"	f
+Pl#LoadCache	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#LoadCache() " {{{$/;"	f
+Pl#Match#Add	.vim/bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Add(pat, expr) " {{{$/;"	f
+Pl#Match#Any	.vim/bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Any(...) " {{{$/;"	f
+Pl#Match#Validate	.vim/bundle/vim-powerline/autoload/Pl/Match.vim	/^function! Pl#Match#Validate(theme, window) " {{{$/;"	f
+Pl#Mod#AddSegmentMod	.vim/bundle/vim-powerline/autoload/Pl/Mod.vim	/^function! Pl#Mod#AddSegmentMod(action, properties) " {{{$/;"	f
+Pl#Mod#ApplySegmentMods	.vim/bundle/vim-powerline/autoload/Pl/Mod.vim	/^function! Pl#Mod#ApplySegmentMods(theme) " {{{$/;"	f
+Pl#Parser#GetStatusline	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! Pl#Parser#GetStatusline(segments) " {{{$/;"	f
+Pl#Parser#ParseChars	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^function! Pl#Parser#ParseChars(arg) " {{{$/;"	f
+Pl#ReloadColorscheme	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#ReloadColorscheme() " {{{$/;"	f
+Pl#Segment#Create	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Create(name, ...) " {{{$/;"	f
+Pl#Segment#Get	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Get(name) " {{{$/;"	f
+Pl#Segment#Init	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Init(params) " {{{$/;"	f
+Pl#Segment#Modes	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Modes(modes) " {{{$/;"	f
+Pl#Segment#NoPadding	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#NoPadding() " {{{$/;"	f
+Pl#Segment#Split	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Split(...) " {{{$/;"	f
+Pl#Segment#Truncate	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^function! Pl#Segment#Truncate() " {{{$/;"	f
+Pl#Statusline	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#Statusline(statusline, current) " {{{$/;"	f
+Pl#StatuslineCallback	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#StatuslineCallback(statusline, args) " {{{$/;"	f
+Pl#Theme#Buffer	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Buffer(ns, ...) " {{{$/;"	f
+Pl#Theme#Callback	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Callback(name, expr) " {{{$/;"	f
+Pl#Theme#Create	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#Create(...) " {{{$/;"	f
+Pl#Theme#InsertSegment	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#InsertSegment(new_segment, where, target_segment) " {{{$/;"	f
+Pl#Theme#RemoveSegment	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#RemoveSegment(target_segment) " {{{$/;"	f
+Pl#Theme#ReplaceSegment	.vim/bundle/vim-powerline/autoload/Pl/Theme.vim	/^function! Pl#Theme#ReplaceSegment(old_segment, new_segment) " {{{$/;"	f
+Pl#UpdateStatusline	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	function! Pl#UpdateStatusline(current, ...) " {{{$/;"	f
+PlaceDelimitersAndInsBetween	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:PlaceDelimitersAndInsBetween()$/;"	f
+Plugin	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=+  -bar   Plugin$/;"	c
+PluginClean	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang   PluginClean$/;"	c
+PluginDocs	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=0         PluginDocs$/;"	c
+PluginInstall	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=* -bang -complete=custom,vundle#scripts#complete PluginInstall$/;"	c
+PluginList	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=0 -bang PluginList$/;"	c
+PluginSearch	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete PluginSearch$/;"	c
+PluginUpdate	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=* -complete=custom,vundle#scripts#complete PluginUpdate PluginInstall! <args>$/;"	c
+Powerline#Functions#GetCharCode	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetCharCode() " {{{$/;"	f
+Powerline#Functions#GetFilepath	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetFilepath() " {{{$/;"	f
+Powerline#Functions#GetFilesize	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetFilesize() " {{{$/;"	f
+Powerline#Functions#GetMode	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetMode() " {{{$/;"	f
+Powerline#Functions#GetShortPath	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetShortPath(threshold) " {{{$/;"	f
+Powerline#Functions#GetWSMarker	.vim/bundle/vim-powerline/autoload/Powerline/Functions.vim	/^function! Powerline#Functions#GetWSMarker() " {{{$/;"	f
+Powerline#Functions#ft_man#GetName	.vim/bundle/vim-powerline/autoload/Powerline/Functions/ft_man.vim	/^function! Powerline#Functions#ft_man#GetName() " {{{$/;"	f
+Powerline#Functions#fugitive#GetBranch	.vim/bundle/vim-powerline/autoload/Powerline/Functions/fugitive.vim	/^function! Powerline#Functions#fugitive#GetBranch(symbol) " {{{$/;"	f
+Powerline#Functions#hgrev#Status	.vim/bundle/vim-powerline/autoload/Powerline/Functions/hgrev.vim	/^function! Powerline#Functions#hgrev#Status(symbol) " {{{$/;"	f
+Powerline#Functions#syntastic#GetErrors	.vim/bundle/vim-powerline/autoload/Powerline/Functions/syntastic.vim	/^function! Powerline#Functions#syntastic#GetErrors(line_symbol) " {{{$/;"	f
+PowerlineClearCache	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	command! PowerlineClearCache call Pl#ClearCache()$/;"	c
+PowerlineReloadColorscheme	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	command! PowerlineReloadColorscheme call Pl#ReloadColorscheme()$/;"	c
+PowerlineStartup	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	augroup PowerlineStartup$/;"	a
+QuitIfLastOpen	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>QuitIfLastOpen() abort$/;"	f
+RecoverStateAfterLineComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:RecoverStateAfterLineComment(state)$/;"	f
+RemoveDelimiters	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:RemoveDelimiters(left, right, line)$/;"	f
+RenderSyntax	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>RenderSyntax()$/;"	f
+Replace	.vim/config/keyboard.vim	/^function! Replace(confirm,wholeword,replace)$/;"	f
+ReplaceDelims	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ReplaceDelims(toReplace1, toReplace2, replacor1, replacor2, str)$/;"	f
+ReplaceLeftMostDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ReplaceLeftMostDelim(toReplace, replacor, str)$/;"	f
+ReplaceRightMostDelim	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:ReplaceRightMostDelim(toReplace, replacor, str)$/;"	f
+ResetOptions	.vim/bundle/php.vim/indent/php.vim	/^function! ResetOptions()$/;"	f
+ResizeWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ResizeWindow()$/;"	f
+RestoreScreenState	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:RestoreScreenState()$/;"	f
+Right	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:Right(...)$/;"	f
+RightMostIndx	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:RightMostIndx(countCommentedLines, countEmptyLines, topline, bottomline)$/;"	f
+SID	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function s:SID()$/;"	f
+SYM_ATTR	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^SYM_ATTR = {$/;"	v
+SaveScreenState	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SaveScreenState()$/;"	f
+SetOption	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^function! s:SetOption(name,default)$/;"	f
+SetOption	.vim/colors/solarized.vim	/^function! s:SetOption(name,default)$/;"	f
+SetUpForNewFiletype	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SetUpForNewFiletype(filetype, forceReset)$/;"	f
+SetupStateBeforeLineComment	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SetupStateBeforeLineComment(topLine, bottomLine)$/;"	f
+SexyNested	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SexyNested()$/;"	f
+ShowBuffers	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ShowBuffers()$/;"	f
+SolarizedHiTrail	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^augroup SolarizedHiTrail$/;"	a
+SolarizedHiTrail	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^function! s:SolarizedHiTrail()$/;"	f
+SolarizedHiTrail	.vim/colors/solarized.vim	/^augroup SolarizedHiTrail$/;"	a
+SolarizedHiTrail	.vim/colors/solarized.vim	/^function! s:SolarizedHiTrail()$/;"	f
+SolarizedMenu	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^function! SolarizedMenu()$/;"	f
+SolarizedMenu	.vim/colors/solarized.vim	/^function! SolarizedMenu()$/;"	f
+SolarizedOptions	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    command SolarizedOptions :call s:SolarizedOptions()$/;"	c
+SolarizedOptions	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^function! s:SolarizedOptions()$/;"	f
+SolarizedOptions	.vim/colors/solarized.vim	/^    command SolarizedOptions :call s:SolarizedOptions()$/;"	c
+SolarizedOptions	.vim/colors/solarized.vim	/^function! s:SolarizedOptions()$/;"	f
+StartExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>StartExplorer(curBufNum)$/;"	f
+Startup	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	function! s:Startup()$/;"	f
+StopExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>StopExplorer(force)$/;"	f
+SwapOuterMultiPartDelimsForPlaceHolders	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SwapOuterMultiPartDelimsForPlaceHolders(line)$/;"	f
+SwapOuterPlaceHoldersForMultiPartDelims	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SwapOuterPlaceHoldersForMultiPartDelims(line)$/;"	f
+SwitchToAlternativeDelimiters	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:SwitchToAlternativeDelimiters(printMsgs)$/;"	f
+SwitchWindow	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! s:SwitchWindow(action, ...)$/;"	f
+TMiniBufExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  command! TMiniBufExplorer echoe 'TMiniBufExplorer is depreciated, please use MBEToggle instead.'$/;"	c
+TabEnterHandler	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>TabEnterHandler()$/;"	f
+TabSpace	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:TabSpace()$/;"	f
+TabbedCol	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:TabbedCol(line, col)$/;"	f
+TogBG	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^function! s:TogBG()$/;"	f
+ToggleBG	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^    command ToggleBG :call s:TogBG()$/;"	c
+ToggleBackground	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^function! ToggleBackground()$/;"	f
+ToggleExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ToggleExplorer(tabs,force)$/;"	f
+ToggleMRU	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>ToggleMRU()$/;"	f
+ToolBar.togglebg	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^inoremenu <script> ToolBar.togglebg <ESC><SID>TogBG<ESC>a$/;"	m
+ToolBar.togglebg	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^nnoremenu <script> ToolBar.togglebg <SID>TogBG$/;"	m
+ToolBar.togglebg	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^vnoremenu <script> ToolBar.togglebg <ESC><SID>TogBG<ESC>gv$/;"	m
+TreeDirNode.AbsoluteTreeRoot	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.AbsoluteTreeRoot()$/;"	f
+TreeDirNode.GetSelected	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.GetSelected()$/;"	f
+TreeDirNode.New	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.New(path, nerdtree)$/;"	f
+TreeDirNode._initChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode._initChildren(silent)$/;"	f
+TreeDirNode._openInNewTab	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode._openInNewTab()$/;"	f
+TreeDirNode._openRecursively2	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode._openRecursively2(forceOpen)$/;"	f
+TreeDirNode.activate	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.activate(...)$/;"	f
+TreeDirNode.addChild	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.addChild(treenode, inOrder)$/;"	f
+TreeDirNode.close	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.close()$/;"	f
+TreeDirNode.closeChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.closeChildren()$/;"	f
+TreeDirNode.createChild	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.createChild(path, inOrder)$/;"	f
+TreeDirNode.displayString	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.displayString()$/;"	f
+TreeDirNode.findNode	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.findNode(path)$/;"	f
+TreeDirNode.getCascade	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getCascade()$/;"	f
+TreeDirNode.getChild	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getChild(path)$/;"	f
+TreeDirNode.getChildByIndex	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getChildByIndex(indx, visible)$/;"	f
+TreeDirNode.getChildCount	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getChildCount()$/;"	f
+TreeDirNode.getChildIndex	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getChildIndex(path)$/;"	f
+TreeDirNode.getDirChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getDirChildren()$/;"	f
+TreeDirNode.getVisibleChildCount	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getVisibleChildCount()$/;"	f
+TreeDirNode.getVisibleChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.getVisibleChildren()$/;"	f
+TreeDirNode.hasVisibleChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.hasVisibleChildren()$/;"	f
+TreeDirNode.isCascadable	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.isCascadable()$/;"	f
+TreeDirNode.open	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.open(...)$/;"	f
+TreeDirNode.openAlong	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.openAlong(...)$/;"	f
+TreeDirNode.openExplorer	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.openExplorer()$/;"	f
+TreeDirNode.openInNewTab	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.openInNewTab(options)$/;"	f
+TreeDirNode.openRecursively	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.openRecursively()$/;"	f
+TreeDirNode.refresh	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.refresh()$/;"	f
+TreeDirNode.refreshDirFlags	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.refreshDirFlags()$/;"	f
+TreeDirNode.refreshFlags	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.refreshFlags()$/;"	f
+TreeDirNode.removeChild	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.removeChild(treenode)$/;"	f
+TreeDirNode.reveal	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.reveal(path, ...)$/;"	f
+TreeDirNode.sortChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.sortChildren()$/;"	f
+TreeDirNode.toggleOpen	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.toggleOpen(...)$/;"	f
+TreeDirNode.transplantChild	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^function! s:TreeDirNode.transplantChild(newNode)$/;"	f
+TreeFileNode.GetRootForTab	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.GetRootForTab()$/;"	f
+TreeFileNode.GetSelected	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.GetSelected()$/;"	f
+TreeFileNode.New	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.New(path, nerdtree)$/;"	f
+TreeFileNode._renderToString	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode._renderToString(depth, drawText)$/;"	f
+TreeFileNode.activate	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.activate(...)$/;"	f
+TreeFileNode.bookmark	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.bookmark(name)$/;"	f
+TreeFileNode.cacheParent	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.cacheParent()$/;"	f
+TreeFileNode.clearBookmarks	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.clearBookmarks()$/;"	f
+TreeFileNode.copy	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.copy(dest)$/;"	f
+TreeFileNode.delete	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.delete()$/;"	f
+TreeFileNode.displayString	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.displayString()$/;"	f
+TreeFileNode.equals	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.equals(treenode)$/;"	f
+TreeFileNode.findNode	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.findNode(path)$/;"	f
+TreeFileNode.findOpenDirSiblingWithVisibleChildren	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.findOpenDirSiblingWithVisibleChildren(direction)$/;"	f
+TreeFileNode.findSibling	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.findSibling(direction)$/;"	f
+TreeFileNode.getNerdtree	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.getNerdtree()$/;"	f
+TreeFileNode.isRoot	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.isRoot()$/;"	f
+TreeFileNode.isVisible	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.isVisible()$/;"	f
+TreeFileNode.open	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.open(...)$/;"	f
+TreeFileNode.openInNewTab	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.openInNewTab(options)$/;"	f
+TreeFileNode.openSplit	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.openSplit()$/;"	f
+TreeFileNode.openVSplit	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.openVSplit()$/;"	f
+TreeFileNode.putCursorHere	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.putCursorHere(isJump, recurseUpward)$/;"	f
+TreeFileNode.refresh	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.refresh()$/;"	f
+TreeFileNode.refreshFlags	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.refreshFlags()$/;"	f
+TreeFileNode.rename	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.rename(newName)$/;"	f
+TreeFileNode.renderToString	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^function! s:TreeFileNode.renderToString()$/;"	f
+TrimTrailingWhitespace	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:TrimTrailingWhitespace(line)$/;"	f
+UI.IndentWid	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.IndentWid()$/;"	f
+UI.MarkupReg	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.MarkupReg()$/;"	f
+UI.New	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.New(nerdtree)$/;"	f
+UI.UpDirLine	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.UpDirLine()$/;"	f
+UI._dumpHelp	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI._dumpHelp()$/;"	f
+UI._indentLevelFor	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI._indentLevelFor(line)$/;"	f
+UI._renderBookmarks	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI._renderBookmarks()$/;"	f
+UI._stripMarkup	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI._stripMarkup(line, removeLeadingSpaces)$/;"	f
+UI.centerView	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.centerView()$/;"	f
+UI.getLineNum	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getLineNum(file_node)$/;"	f
+UI.getPath	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getPath(ln)$/;"	f
+UI.getRootLineNum	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getRootLineNum()$/;"	f
+UI.getShowBookmarks	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getShowBookmarks()$/;"	f
+UI.getShowFiles	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getShowFiles()$/;"	f
+UI.getShowHelp	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getShowHelp()$/;"	f
+UI.getShowHidden	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.getShowHidden()$/;"	f
+UI.isIgnoreFilterEnabled	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.isIgnoreFilterEnabled()$/;"	f
+UI.isMinimal	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.isMinimal()$/;"	f
+UI.render	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.render()$/;"	f
+UI.renderViewSavingPosition	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.renderViewSavingPosition()$/;"	f
+UI.restoreScreenState	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.restoreScreenState()$/;"	f
+UI.saveScreenState	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.saveScreenState()$/;"	f
+UI.setShowHidden	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.setShowHidden(val)$/;"	f
+UI.toggleHelp	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleHelp()$/;"	f
+UI.toggleIgnoreFilter	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleIgnoreFilter()$/;"	f
+UI.toggleShowBookmarks	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleShowBookmarks()$/;"	f
+UI.toggleShowFiles	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleShowFiles()$/;"	f
+UI.toggleShowHidden	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleShowHidden()$/;"	f
+UI.toggleZoom	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^function! s:UI.toggleZoom()$/;"	f
+UnEsc	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UnEsc(str, escChar)$/;"	f
+UncommentLineNormal	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UncommentLineNormal(line)$/;"	f
+UncommentLines	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UncommentLines(topLine, bottomLine)$/;"	f
+UncommentLinesNormal	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UncommentLinesNormal(topline, bottomline)$/;"	f
+UncommentLinesSexy	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UncommentLinesSexy(topline, bottomline)$/;"	f
+UntabbedCol	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^function s:UntabbedCol(line, col)$/;"	f
+UpdateAllBufferDicts	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateAllBufferDicts(bufNum,deleted)$/;"	f
+UpdateBufferNameDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateBufferNameDict(bufNum,deleted)$/;"	f
+UpdateBufferPathDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateBufferPathDict(bufNum,deleted)$/;"	f
+UpdateBufferPathSignDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateBufferPathSignDict(bufNum,deleted)$/;"	f
+UpdateBufferStateDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateBufferStateDict(bufNum,deleted)$/;"	f
+UpdateBufferUniqNameDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateBufferUniqNameDict(bufNum,deleted)$/;"	f
+UpdateExplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>UpdateExplorer(curBufNum)$/;"	f
+VimEnterHandler	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^function! <SID>VimEnterHandler()$/;"	f
+VundleClean	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang                                          VundleClean   PluginClean<bang>$/;"	c
+VundleDocs	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=0                                                VundleDocs    PluginDocs$/;"	c
+VundleInstall	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete VundleInstall PluginInstall<bang> <args>$/;"	c
+VundleSearch	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=? -bang -complete=custom,vundle#scripts#complete VundleSearch  PluginSearch<bang> <args>$/;"	c
+VundleUpdate	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com!                                                         VundleUpdate  PluginInstall!$/;"	c
+VundleUpdate	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^com! -nargs=*       -complete=custom,vundle#scripts#complete VundleUpdate  PluginInstall! <args>$/;"	c
+Window.Toggle\	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^inoremenu <script> Window.Toggle\\ Background <ESC><SID>TogBG<ESC>a$/;"	m
+Window.Toggle\	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^nnoremenu <script> Window.Toggle\\ Background <SID>TogBG$/;"	m
+Window.Toggle\	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^vnoremenu <script> Window.Toggle\\ Background <ESC><SID>TogBG<ESC>gv$/;"	m
+activateAll	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateAll()$/;"	f
+activateBookmark	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateBookmark(bm)$/;"	f
+activateDirNode	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateDirNode(node)$/;"	f
+activateFileNode	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:activateFileNode(node)$/;"	f
+align_matrix	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(0, 0)$/;"	v
+align_matrix	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(font_dim['width'] - sym_dim['width'], 0)$/;"	v
+align_matrix	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			align_matrix = psMat.translate(font_dim['width'] \/ 2 - sym_dim['width'] \/ 2 , 0)$/;"	v
+args	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^args = parser.parse_args()$/;"	v
+b:did_ftplugin	.vim/bundle/Vundle.vim/ftplugin/vundlelog.vim	/^let b:did_ftplugin = 1$/;"	v
+b:did_indent	.vim/bundle/php.vim/indent/php.vim	/^let b:did_indent = 1$/;"	v
+b:optionsset	.vim/bundle/php.vim/indent/php.vim	/^let b:optionsset = 0$/;"	v
+b:php_no_autocomment	.vim/bundle/php.vim/indent/php.vim	/^	let b:php_no_autocomment = 1$/;"	v
+b:php_no_autocomment	.vim/bundle/php.vim/indent/php.vim	/^	let b:php_no_autocomment = php_no_autocomment$/;"	v
+b:php_noindent_switch	.vim/bundle/php.vim/indent/php.vim	/^	let b:php_noindent_switch=1$/;"	v
+bundle.is_pinned	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:bundle.is_pinned()$/;"	f
+bundle.path	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:bundle.path()$/;"	f
+chCwd	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chCwd(node)$/;"	f
+chRoot	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:chRoot(node)$/;"	f
+check_bundle_name	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^funct! s:check_bundle_name(bundle)$/;"	f
+closeChildren	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeChildren(node)$/;"	f
+closeCurrentDir	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeCurrentDir(node)$/;"	f
+closeTreeWindow	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:closeTreeWindow()$/;"	f
+color_helper#color_name_to_hex	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#color_name_to_hex(color_name)$/;"	f
+color_helper#dec_to_hex	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#dec_to_hex(arg, padding)$/;"	f
+color_helper#hex_color_darken	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#hex_color_darken(color, percent)$/;"	f
+color_helper#hex_color_lighten	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#hex_color_lighten(color, percent)$/;"	f
+color_helper#hex_color_to_rgb	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#hex_color_to_rgb(hex_color)$/;"	f
+color_helper#hex_to_dec	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#hex_to_dec(arg)$/;"	f
+color_helper#rgb_color_to_hex	.vim/bundle/vim-indent-guides/autoload/color_helper.vim	/^function! color_helper#rgb_color_to_hex(rgb_color)$/;"	f
+colors_name	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let colors_name = "solarized"$/;"	v
+colors_name	.vim/colors/phd.vim	/^let colors_name = "phd"$/;"	v
+colors_name	.vim/colors/solarized.vim	/^let colors_name = "solarized"$/;"	v
+create_changelog	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! s:create_changelog() abort$/;"	f
+deleteBookmark	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:deleteBookmark(bm)$/;"	f
+displayHelp	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:displayHelp()$/;"	f
+expand_path	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:expand_path(path) abort$/;"	f
+extension	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		extension = 'otf'$/;"	v
+fetch_scripts	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! s:fetch_scripts(to)$/;"	f
+findAndRevealPath	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:findAndRevealPath()$/;"	f
+font	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		font = fontforge.open(font_path)$/;"	v
+font_dim	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^	font_dim = {$/;"	v
+font_ycenter	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		font_ycenter = font_dim['height'] \/ 2$/;"	v
+g:NERDDelimiterMap	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let g:NERDDelimiterMap = s:delimiterMap$/;"	v
+g:NERDTree	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^let g:NERDTree = s:NERDTree$/;"	v
+g:NERDTreeAutoDeleteBuffer	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^    let g:NERDTreeAutoDeleteBuffer = 0$/;"	v
+g:NERDTreeBookmark	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^let g:NERDTreeBookmark = s:Bookmark$/;"	v
+g:NERDTreeCreator	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^let g:NERDTreeCreator = s:Creator$/;"	v
+g:NERDTreeDirNode	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^let g:NERDTreeDirNode = s:TreeDirNode$/;"	v
+g:NERDTreeEvent	.vim/bundle/nerdtree/lib/nerdtree/event.vim	/^let g:NERDTreeEvent = s:Event$/;"	v
+g:NERDTreeFileNode	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^let g:NERDTreeFileNode = s:TreeFileNode$/;"	v
+g:NERDTreeFlagSet	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^let g:NERDTreeFlagSet = s:FlagSet$/;"	v
+g:NERDTreeIgnore	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeIgnore = ['\\~$']$/;"	v
+g:NERDTreeKeyMap	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^let g:NERDTreeKeyMap = s:KeyMap$/;"	v
+g:NERDTreeMenuController	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^let g:NERDTreeMenuController = s:MenuController$/;"	v
+g:NERDTreeMenuItem	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^let g:NERDTreeMenuItem = s:MenuItem$/;"	v
+g:NERDTreeOpener	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^let g:NERDTreeOpener = s:Opener$/;"	v
+g:NERDTreePath	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^let g:NERDTreePath = s:Path$/;"	v
+g:NERDTreePathNotifier	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^let g:NERDTreePathNotifier = deepcopy(s:Notifier)$/;"	v
+g:NERDTreeSortOrder	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeSortOrder = ['\\\/$', '*', '\\.swp$',  '\\.bak$', '\\~$']$/;"	v
+g:NERDTreeStatusline	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^    let g:NERDTreeStatusline = "%{exists('b:NERDTree')?b:NERDTree.root.path.str():''}"$/;"	v
+g:NERDTreeUI	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^let g:NERDTreeUI = s:UI$/;"	v
+g:Pl#HL	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#HL = []$/;"	v
+g:Pl#OLD_STL	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#OLD_STL = ''$/;"	v
+g:Pl#Parser#Symbols	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^	let g:Pl#Parser#Symbols[g:Powerline_symbols].dividers = g:Powerline_dividers_override$/;"	v
+g:Pl#Parser#Symbols	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^	let g:Pl#Parser#Symbols[g:Powerline_symbols].symbols[s:key] = s:value$/;"	v
+g:Pl#Parser#Symbols	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let g:Pl#Parser#Symbols = {$/;"	v
+g:Pl#THEME	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#THEME = []$/;"	v
+g:Pl#THEME_CALLBACKS	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	let g:Pl#THEME_CALLBACKS = []$/;"	v
+g:Powerline#Colorschemes#default#colorscheme	.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/default.vim	/^let g:Powerline#Colorschemes#default#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized#colorscheme	.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized.vim	/^let g:Powerline#Colorschemes#solarized#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized16#colorscheme	.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized16.vim	/^let g:Powerline#Colorschemes#solarized16#colorscheme= Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Colorschemes#solarized256#colorscheme	.vim/bundle/vim-powerline/autoload/Powerline/Colorschemes/solarized256.vim	/^let g:Powerline#Colorschemes#solarized256#colorscheme = Pl#Colorscheme#Init([$/;"	v
+g:Powerline#Matches#matches	.vim/bundle/vim-powerline/autoload/Powerline/Matches.vim	/^let g:Powerline#Matches#matches = {$/;"	v
+g:Powerline#Segments#ctrlp#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^let g:Powerline#Segments#ctrlp#segments = Pl#Segment#Init(['ctrlp'$/;"	v
+g:Powerline#Segments#ctrlp#segments#focus	.vim/bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#focus = '%{"%0"}'$/;"	v
+g:Powerline#Segments#ctrlp#segments#next	.vim/bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#next = '%-3{"%5"}'$/;"	v
+g:Powerline#Segments#ctrlp#segments#prev	.vim/bundle/vim-powerline/autoload/Powerline/Segments/ctrlp.vim	/^	let g:Powerline#Segments#ctrlp#segments#prev = '%-3{"%3"}'$/;"	v
+g:Powerline#Segments#ft_man#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/ft_man.vim	/^let g:Powerline#Segments#ft_man#segments = Pl#Segment#Init(['ft_man',$/;"	v
+g:Powerline#Segments#fugitive#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/fugitive.vim	/^let g:Powerline#Segments#fugitive#segments = Pl#Segment#Init(['fugitive',$/;"	v
+g:Powerline#Segments#hgrev#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/hgrev.vim	/^let g:Powerline#Segments#hgrev#segments = Pl#Segment#Init(['hgrev',$/;"	v
+g:Powerline#Segments#rvm#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/rvm.vim	/^let g:Powerline#Segments#rvm#segments = Pl#Segment#Init(['rvm',$/;"	v
+g:Powerline#Segments#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments.vim	/^let g:Powerline#Segments#segments = Pl#Segment#Init([$/;"	v
+g:Powerline#Segments#syntastic#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/syntastic.vim	/^let g:Powerline#Segments#syntastic#segments = Pl#Segment#Init(['syntastic',$/;"	v
+g:Powerline#Segments#tagbar#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/tagbar.vim	/^let g:Powerline#Segments#tagbar#segments = Pl#Segment#Init(['tagbar',$/;"	v
+g:Powerline#Segments#virtualenv#segments	.vim/bundle/vim-powerline/autoload/Powerline/Segments/virtualenv.vim	/^let g:Powerline#Segments#virtualenv#segments = Pl#Segment#Init(['virtualenv',$/;"	v
+g:Powerline#Themes#default#theme	.vim/bundle/vim-powerline/autoload/Powerline/Themes/default.vim	/^let g:Powerline#Themes#default#theme = Pl#Theme#Create($/;"	v
+g:Powerline#Themes#solarized16#theme	.vim/bundle/vim-powerline/autoload/Powerline/Themes/solarized16.vim	/^let g:Powerline#Themes#solarized16#theme = Pl#Theme#Create($/;"	v
+g:Powerline#Themes#solarized256#theme	.vim/bundle/vim-powerline/autoload/Powerline/Themes/solarized256.vim	/^let g:Powerline#Themes#solarized256#theme = Pl#Theme#Create($/;"	v
+g:Powerline_cache_dir	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^		let g:Powerline_cache_dir = simplify(expand('<sfile>:p:h') .'\/..')$/;"	v
+g:Powerline_colorsscheme	.vim/config/plugin.vim	/^let g:Powerline_colorsscheme='solarized256'        " powerline 设置状态栏主题风格$/;"	v
+g:Powerline_loaded	.vim/bundle/vim-powerline/plugin/Powerline.vim	/^	let g:Powerline_loaded = 1$/;"	v
+g:colors_name	.vim/bundle/molokai/colors/molokai.vim	/^let g:colors_name="molokai"$/;"	v
+g:colors_name	.vim/colors/molokai.vim	/^let g:colors_name="molokai"$/;"	v
+g:indent_guides_autocmds_enabled	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^let g:indent_guides_autocmds_enabled         = 0$/;"	v
+g:indent_guides_color_hex_guibg_pattern	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^let g:indent_guides_color_hex_guibg_pattern  = 'guibg=\\zs' . g:indent_guides_color_hex_pattern . '\\ze'$/;"	v
+g:indent_guides_color_hex_pattern	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^let g:indent_guides_color_hex_pattern        = '#[0-9A-Fa-f]\\{6\\}'$/;"	v
+g:indent_guides_color_name_guibg_pattern	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^let g:indent_guides_color_name_guibg_pattern = "guibg='\\\\?\\\\zs[0-9A-Za-z ]\\\\+\\\\ze'\\\\?"$/;"	v
+g:indent_guides_enable_on_vim_startup	.vim/config/plugin.vim	/^let g:indent_guides_enable_on_vim_startup=1         " 随 vim 自启动 $/;"	v
+g:indent_guides_exclude_filetypes	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^  let g:indent_guides_exclude_filetypes = ['help']$/;"	v
+g:indent_guides_guide_size	.vim/config/plugin.vim	/^let g:indent_guides_guide_size=2                                       " 色块宽度$/;"	v
+g:indent_guides_start_level	.vim/config/plugin.vim	/^let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进$/;"	v
+g:k	test/a.vim	/^let g:k = 'hello world'$/;"	v
+g:loaded_indent_guides	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^let g:loaded_indent_guides = 1$/;"	v
+g:loaded_nerdtree_autoload	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^let g:loaded_nerdtree_autoload = 1$/;"	v
+g:loaded_nerdtree_exec_menuitem	.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim	/^let g:loaded_nerdtree_exec_menuitem = 1$/;"	v
+g:loaded_nerdtree_fs_menu	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^let g:loaded_nerdtree_fs_menu = 1$/;"	v
+g:loaded_nerdtree_ui_glue_autoload	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^let g:loaded_nerdtree_ui_glue_autoload = 1$/;"	v
+g:loaded_togglebg	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^let g:loaded_togglebg = 1$/;"	v
+g:miniBufExplAutoStart	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplAutoStart = 1$/;"	v
+g:miniBufExplAutoStart	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplAutoStart = g:miniBufExplorerAutoStart$/;"	v
+g:miniBufExplBRSplit	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplBRSplit = g:miniBufExplSplitBelow$/;"	v
+g:miniBufExplBRSplit	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplBRSplit = g:miniBufExplVSplit ? &splitright : &splitbelow$/;"	v
+g:miniBufExplBuffersNeeded	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplBuffersNeeded = 2$/;"	v
+g:miniBufExplBuffersNeeded	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplBuffersNeeded = g:miniBufExplorerMoreThanOne$/;"	v
+g:miniBufExplCloseOnSelect	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplCloseOnSelect = 0$/;"	v
+g:miniBufExplCycleArround	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplCycleArround = 0$/;"	v
+g:miniBufExplDebugLevel	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplDebugLevel = 1$/;"	v
+g:miniBufExplDebugLevel	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplDebugLevel = g:miniBufExplorerDebugLevel$/;"	v
+g:miniBufExplDebugMode	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplDebugMode = 3$/;"	v
+g:miniBufExplDebugMode	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplDebugMode = g:miniBufExplorerDebugMode$/;"	v
+g:miniBufExplDebugOutput	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplDebugOutput = g:miniBufExplorerDebugOutput$/;"	v
+g:miniBufExplDebugOutput	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let g:miniBufExplDebugOutput = ''$/;"	v
+g:miniBufExplFuncCallDepth	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let g:miniBufExplFuncCallDepth = 0$/;"	v
+g:miniBufExplHideWhenDiff	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^    let g:miniBufExplHideWhenDiff = 0$/;"	v
+g:miniBufExplHideWhenDiff	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplHideWhenDiff = g:miniBufExplorerHideWhenDiff$/;"	v
+g:miniBufExplMaxSize	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplMaxSize = 0$/;"	v
+g:miniBufExplMaxSize	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplMaxSize = g:miniBufExplMaxHeight$/;"	v
+g:miniBufExplMinSize	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplMinSize = 1$/;"	v
+g:miniBufExplMinSize	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplMinSize = g:miniBufExplMinHeight$/;"	v
+g:miniBufExplSetUT	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^    let g:miniBufExplSetUT = 1$/;"	v
+g:miniBufExplShowBufNumbers	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplShowBufNumbers = 1$/;"	v
+g:miniBufExplSortBy	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplSortBy = "number"$/;"	v
+g:miniBufExplSplitToEdge	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplSplitToEdge = 1$/;"	v
+g:miniBufExplStatusLineText	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplStatusLineText = "-MiniBufExplorer-"$/;"	v
+g:miniBufExplTabWrap	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplTabWrap = 0$/;"	v
+g:miniBufExplUseSingleClick	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplUseSingleClick = 0$/;"	v
+g:miniBufExplVSplit	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^  let g:miniBufExplVSplit = 0$/;"	v
+g:my_vimrc	test/test.vim	/^    let g:my_vimrc = $HOME.'\\vimfiles\\vimrc'$/;"	v
+g:my_vimrc	test/test.vim	/^    let g:my_vimrc = '\/vagrant\/data\/Vim_lover\/vimrc'$/;"	v
+g:solarized_termcolors	.vim/config/plugin.vim	/^let g:solarized_termcolors=16                      " powerline 插件状态栏风格$/;"	v
+g:vimrc_home	test/test.vim	/^    let g:vimrc_home = $HOME.'\\vimfiles'$/;"	v
+g:vimrc_home	test/test.vim	/^    let g:vimrc_home = '\/vagrant\/data\/Vim_lover'$/;"	v
+get_current_origin_url	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:get_current_origin_url(bundle) abort$/;"	f
+get_current_sha	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:get_current_sha(bundle)$/;"	f
+get_dim	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^	def get_dim(glyph):$/;"	f
+handleLeftClick	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleLeftClick()$/;"	f
+handleMiddleMouse	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:handleMiddleMouse()$/;"	f
+has_doc	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:has_doc(rtp) abort$/;"	f
+helptags	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:helptags(rtp) abort$/;"	f
+hs_highlight_boolean	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let hs_highlight_boolean=1$/;"	v
+hs_highlight_boolean	.vim/colors/solarized.vim	/^let hs_highlight_boolean=1$/;"	v
+hs_highlight_delimiters	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let hs_highlight_delimiters=1$/;"	v
+hs_highlight_delimiters	.vim/colors/solarized.vim	/^let hs_highlight_delimiters=1$/;"	v
+indent_guides	.vim/bundle/vim-indent-guides/plugin/indent_guides.vim	/^augroup indent_guides$/;"	a
+indent_guides#basic_highlight_colors	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#basic_highlight_colors()$/;"	f
+indent_guides#calculate_guide_size	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#calculate_guide_size()$/;"	f
+indent_guides#capture_highlight	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#capture_highlight(group_name)$/;"	f
+indent_guides#clear_matches	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#clear_matches()$/;"	f
+indent_guides#define_default_highlights	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#define_default_highlights()$/;"	f
+indent_guides#disable	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#disable()$/;"	f
+indent_guides#enable	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#enable()$/;"	f
+indent_guides#exclude_filetype	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#exclude_filetype()$/;"	f
+indent_guides#gui_highlight_colors	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#gui_highlight_colors()$/;"	f
+indent_guides#highlight_colors	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#highlight_colors()$/;"	f
+indent_guides#indent_highlight_pattern	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#indent_highlight_pattern(indent_pattern, column_start, indent_size)$/;"	f
+indent_guides#init_matches	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#init_matches()$/;"	f
+indent_guides#init_script_vars	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#init_script_vars()$/;"	f
+indent_guides#lighten_or_darken_color	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#lighten_or_darken_color(color)$/;"	f
+indent_guides#process_autocmds	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#process_autocmds()$/;"	f
+indent_guides#toggle	.vim/bundle/vim-indent-guides/autoload/indent_guides.vim	/^function! indent_guides#toggle()$/;"	f
+init	.vim/bundle/Vundle.vim/test/files/test.erl	/^init(_) ->$/;"	f	module:mmc_logmon_sup
+initVariable	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^function! s:initVariable(var, value)$/;"	f
+jj	test/test.vim	/^let jj = ''$/;"	v
+jumpToChild	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToChild(currentNode, direction)$/;"	f
+jumpToFirstChild	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToFirstChild(node)$/;"	f
+jumpToLastChild	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToLastChild(node)$/;"	f
+jumpToNextSibling	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToNextSibling(node)$/;"	f
+jumpToParent	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToParent(node)$/;"	f
+jumpToPrevSibling	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToPrevSibling(node)$/;"	f
+jumpToRoot	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToRoot()$/;"	f
+jumpToSibling	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:jumpToSibling(currentNode, forward)$/;"	f
+kg	test/test.vim	/^let kg = g:vimrc_home .'\/.vim\/bundle\/Vundle.vim'$/;"	v
+kk	test/test.vim	/^let kk = g:my_vimrc.'\/.vim\/sss'$/;"	v
+load_scripts	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! s:load_scripts(bang)$/;"	f
+loaded_minibufexplorer	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let loaded_minibufexplorer = 1$/;"	v
+loaded_nerd_comments	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let loaded_nerd_comments = 1$/;"	v
+loaded_nerd_tree	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^let loaded_nerd_tree = 1$/;"	v
+log	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:log(str, ...) abort$/;"	f
+make_sync_command	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:make_sync_command(bang, bundle) abort$/;"	f
+mapleader	.vim/config/keyboard.vim	/^let mapleader=";"$/;"	v
+mm	test/test.vim	/^let mm = g:vimrc_home .'\/.vim\/bundle\/Vundle.vim'$/;"	v
+mmc_logmon_sup	.vim/bundle/Vundle.vim/test/files/test.erl	/^-module(mmc_logmon_sup).$/;"	m
+my	test/test.vim	/^let my = 'hh'$/;"	v
+nerdtree#checkForBrowse	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#checkForBrowse(dir)$/;"	f
+nerdtree#compareBookmarks	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#compareBookmarks(first, second)$/;"	f
+nerdtree#compareNodes	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#compareNodes(n1, n2)$/;"	f
+nerdtree#compareNodesBySortKey	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#compareNodesBySortKey(n1, n2)$/;"	f
+nerdtree#completeBookmarks	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#completeBookmarks(A,L,P)$/;"	f
+nerdtree#deprecated	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#deprecated(func, ...)$/;"	f
+nerdtree#echo	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#echo(msg)$/;"	f
+nerdtree#echoError	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#echoError(msg)$/;"	f
+nerdtree#echoWarning	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#echoWarning(msg)$/;"	f
+nerdtree#exec	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#exec(cmd)$/;"	f
+nerdtree#has_opt	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#has_opt(options, name)$/;"	f
+nerdtree#loadClassFiles	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#loadClassFiles()$/;"	f
+nerdtree#postSourceActions	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#postSourceActions()$/;"	f
+nerdtree#renderView	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#renderView()$/;"	f
+nerdtree#runningWindows	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#runningWindows()$/;"	f
+nerdtree#ui_glue#bookmarkNode	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#bookmarkNode(...)$/;"	f
+nerdtree#ui_glue#chRootCwd	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#chRootCwd()$/;"	f
+nerdtree#ui_glue#clearBookmarks	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#clearBookmarks(bookmarks)$/;"	f
+nerdtree#ui_glue#createDefaultBindings	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#createDefaultBindings()$/;"	f
+nerdtree#ui_glue#invokeKeyMap	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#invokeKeyMap(key)$/;"	f
+nerdtree#ui_glue#openBookmark	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#openBookmark(name)$/;"	f
+nerdtree#ui_glue#revealBookmark	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#revealBookmark(name)$/;"	f
+nerdtree#ui_glue#setupCommands	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#setupCommands()$/;"	f
+nerdtree#ui_glue#upDir	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! nerdtree#ui_glue#upDir(keepState)$/;"	f
+nerdtree#version	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! nerdtree#version()$/;"	f
+onlybitmaps	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^	onlybitmaps = font.onlybitmaps$/;"	v
+openExplorer	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openExplorer(node)$/;"	f
+openHSplit	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openHSplit(target)$/;"	f
+openInNewTab	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openInNewTab(target)$/;"	f
+openInNewTabSilent	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openInNewTabSilent(target)$/;"	f
+openNodeRecursively	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openNodeRecursively(node)$/;"	f
+openVSplit	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:openVSplit(target)$/;"	f
+overlap_width	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			overlap_width = font.em \/ 48$/;"	v
+parse_name	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:parse_name(arg)$/;"	f
+parse_options	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:parse_options(opts)$/;"	f
+parser	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^parser = argparse.ArgumentParser(description='Font patcher for Powerline. Creates dividers and symbols in FontForge-compatible font files. Requires FontForge with Python bindings. Stores glyphs in the U+2B80-U+2BFF range ("Miscellaneous symbols and arrows"). Stores the patched font as a new, renamed font file by default.')$/;"	v
+previewNodeCurrent	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeCurrent(node)$/;"	f
+previewNodeHSplit	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeHSplit(node)$/;"	f
+previewNodeVSplit	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:previewNodeVSplit(node)$/;"	f
+process	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:process(bang, cmd)$/;"	f
+promptToDelBuffer	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:promptToDelBuffer(bufnum, msg)$/;"	f
+promptToRenameBuffer	.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim	/^function! s:promptToRenameBuffer(bufnum, msg, newFileName)$/;"	f
+refreshCurrent	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshCurrent(node)$/;"	f
+refreshRoot	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:refreshRoot()$/;"	f
+reuseWin	.vim/bundle/nerdtree/autoload/nerdtree.vim	/^function! s:reuseWin(dir) abort$/;"	f
+rtp_add	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtp_add(dir) abort$/;"	f
+rtp_add_a	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtp_add_a()$/;"	f
+rtp_add_defaults	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtp_add_defaults()$/;"	f
+rtp_rm	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtp_rm(dir) abort$/;"	f
+rtp_rm_a	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtp_rm_a()$/;"	f
+rtpath	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! s:rtpath(opts)$/;"	f
+s:Bookmark	.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim	/^let s:Bookmark = {}$/;"	v
+s:BufList	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:BufList = []$/;"	v
+s:CACHE_REVISION	.vim/bundle/vim-powerline/autoload/Pl.vim	/^	let s:CACHE_REVISION = 7$/;"	v
+s:Creator	.vim/bundle/nerdtree/lib/nerdtree/creator.vim	/^let s:Creator = {}$/;"	v
+s:EMPTY_SEGMENT	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:EMPTY_SEGMENT = { 'type': 'empty' }$/;"	v
+s:Event	.vim/bundle/nerdtree/lib/nerdtree/event.vim	/^let s:Event = {}$/;"	v
+s:FlagSet	.vim/bundle/nerdtree/lib/nerdtree/flag_set.vim	/^let s:FlagSet = {}$/;"	v
+s:HARD_DIVIDER	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:HARD_DIVIDER = 0$/;"	v
+s:KeyMap	.vim/bundle/nerdtree/lib/nerdtree/key_map.vim	/^let s:KeyMap = {}$/;"	v
+s:LEFT_SIDE	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:LEFT_SIDE = 0$/;"	v
+s:MRUEnable	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:MRUEnable = 1$/;"	v
+s:MRUList	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:MRUList = []$/;"	v
+s:MenuController	.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim	/^let s:MenuController = {}$/;"	v
+s:MenuItem	.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim	/^let s:MenuItem = {}$/;"	v
+s:NERDFileNameEscape	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let s:NERDFileNameEscape="[]#*$%'\\" ?`!&();<>\\\\"$/;"	v
+s:NERDTree	.vim/bundle/nerdtree/lib/nerdtree/nerdtree.vim	/^let s:NERDTree = {}$/;"	v
+s:NERDTreeSortStarIndex	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^let s:NERDTreeSortStarIndex = index(g:NERDTreeSortOrder, '*')$/;"	v
+s:Notifier	.vim/bundle/nerdtree/lib/nerdtree/notifier.vim	/^let s:Notifier = {}$/;"	v
+s:Opener	.vim/bundle/nerdtree/lib/nerdtree/opener.vim	/^let s:Opener = {}$/;"	v
+s:PADDING	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:PADDING = 1$/;"	v
+s:Path	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^let s:Path = {}$/;"	v
+s:PathSeparator	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^    let s:PathSeparator = '\/'$/;"	v
+s:PathSeparator	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^    let s:PathSeparator = '\\'$/;"	v
+s:RIGHT_SIDE	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:RIGHT_SIDE = 2$/;"	v
+s:SOFT_DIVIDER	.vim/bundle/vim-powerline/autoload/Pl/Parser.vim	/^let s:SOFT_DIVIDER = 1$/;"	v
+s:TabsMBEState	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:TabsMBEState = 0$/;"	v
+s:TreeDirNode	.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim	/^let s:TreeDirNode = copy(g:NERDTreeFileNode)$/;"	v
+s:TreeFileNode	.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim	/^let s:TreeFileNode = {}$/;"	v
+s:UI	.vim/bundle/nerdtree/lib/nerdtree/ui.vim	/^let s:UI = {}$/;"	v
+s:allocated_colors	.vim/bundle/vim-powerline/autoload/Pl/Hi.vim	/^let s:allocated_colors = {$/;"	v
+s:autorestoptions	.vim/bundle/php.vim/indent/php.vim	/^	let s:autorestoptions = 1$/;"	v
+s:autorestoptions	.vim/bundle/php.vim/indent/php.vim	/^let s:autorestoptions = 0$/;"	v
+s:b	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:b           = ""$/;"	v
+s:b	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:b           = ",bold"$/;"	v
+s:b	.vim/colors/solarized.vim	/^    let s:b           = ""$/;"	v
+s:b	.vim/colors/solarized.vim	/^    let s:b           = ",bold"$/;"	v
+s:back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^        let s:back    = s:base03$/;"	v
+s:back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = "NONE"$/;"	v
+s:back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:back$/;"	v
+s:back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:base02$/;"	v
+s:back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:back        = s:base03$/;"	v
+s:back	.vim/colors/solarized.vim	/^        let s:back    = s:base03$/;"	v
+s:back	.vim/colors/solarized.vim	/^    let s:back        = "NONE"$/;"	v
+s:back	.vim/colors/solarized.vim	/^    let s:back        = s:back$/;"	v
+s:back	.vim/colors/solarized.vim	/^    let s:back        = s:base02$/;"	v
+s:back	.vim/colors/solarized.vim	/^    let s:back        = s:base03$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "#808080"$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "#839496"$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "12"$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "244"$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = "LightBlue"     " 4*$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = s:base1$/;"	v
+s:base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base0       = s:temp00$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = "#808080"$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = "#839496"$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = "12"$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = "244"$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = "LightBlue"     " 4*$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = s:base1$/;"	v
+s:base0	.vim/colors/solarized.vim	/^    let s:base0       = s:temp00$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "#585858"$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "#657b83"$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "11"$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "240"$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = "LightYellow"   " 3*$/;"	v
+s:base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base00      = s:base0$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = "#585858"$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = "#657b83"$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = "11"$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = "240"$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = "LightYellow"   " 3*$/;"	v
+s:base00	.vim/colors/solarized.vim	/^    let s:base00      = s:base0$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "#4e4e4e"$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "#586e75"$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "10"$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "239"$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = "LightGreen"    " 2*$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = s:base00$/;"	v
+s:base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base01      = s:base1$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = "#4e4e4e"$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = "#586e75"$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = "10"$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = "239"$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = "LightGreen"    " 2*$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = s:base00$/;"	v
+s:base01	.vim/colors/solarized.vim	/^    let s:base01      = s:base1$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "#073642"$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "#262626"$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "0"$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "235"$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = "Black"         " 0$/;"	v
+s:base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base02      = s:base2$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = "#073642"$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = "#262626"$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = "0"$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = "235"$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = "Black"         " 0$/;"	v
+s:base02	.vim/colors/solarized.vim	/^    let s:base02      = s:base2$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "#002b36"$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "#1c1c1c"$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "234"$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "8"$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = "DarkGray"      " 0*$/;"	v
+s:base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base03      = s:base3$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = "#002b36"$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = "#1c1c1c"$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = "234"$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = "8"$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = "DarkGray"      " 0*$/;"	v
+s:base03	.vim/colors/solarized.vim	/^    let s:base03      = s:base3$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "#8a8a8a"$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "#93a1a1"$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "14"$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "245"$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = "LightCyan"     " 6*$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = s:base2$/;"	v
+s:base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base1       = s:temp01$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = "#8a8a8a"$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = "#93a1a1"$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = "14"$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = "245"$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = "LightCyan"     " 6*$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = s:base2$/;"	v
+s:base1	.vim/colors/solarized.vim	/^    let s:base1       = s:temp01$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "#d7d7af"$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "#eee8d5"$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "187"$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "7"$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = "LightGray"     " 7$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = s:base3$/;"	v
+s:base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base2       = s:temp02$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = "#d7d7af"$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = "#eee8d5"$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = "187"$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = "7"$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = "LightGray"     " 7$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = s:base3$/;"	v
+s:base2	.vim/colors/solarized.vim	/^    let s:base2       = s:temp02$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "#fdf6e3"$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "#ffffd7"$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "15"$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "230"$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = "White"         " 7*$/;"	v
+s:base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:base3       = s:temp03$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = "#fdf6e3"$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = "#ffffd7"$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = "15"$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = "230"$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = "White"         " 7*$/;"	v
+s:base3	.vim/colors/solarized.vim	/^    let s:base3       = s:temp03$/;"	v
+s:bb	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:bb          = ""$/;"	v
+s:bb	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:bb          = ",bold"$/;"	v
+s:bb	.vim/colors/solarized.vim	/^    let s:bb          = ""$/;"	v
+s:bb	.vim/colors/solarized.vim	/^    let s:bb          = ",bold"$/;"	v
+s:bg	.vim/colors/phd.vim	/^let s:bg = '#061229'$/;"	v
+s:bg_hl	.vim/colors/phd.vim	/^let s:bg_hl = '#324454'$/;"	v
+s:bg_hl_soft	.vim/colors/phd.vim	/^let s:bg_hl_soft = '#1e293e'$/;"	v
+s:bg_minor	.vim/colors/phd.vim	/^let s:bg_minor = '#030a17'$/;"	v
+s:blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "#0087ff"$/;"	v
+s:blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "#268bd2"$/;"	v
+s:blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "33"$/;"	v
+s:blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "4"$/;"	v
+s:blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:blue        = "DarkBlue"      " 4$/;"	v
+s:blue	.vim/colors/phd.vim	/^let s:blue = '#5299bf'$/;"	v
+s:blue	.vim/colors/solarized.vim	/^    let s:blue        = "#0087ff"$/;"	v
+s:blue	.vim/colors/solarized.vim	/^    let s:blue        = "#268bd2"$/;"	v
+s:blue	.vim/colors/solarized.vim	/^    let s:blue        = "33"$/;"	v
+s:blue	.vim/colors/solarized.vim	/^    let s:blue        = "4"$/;"	v
+s:blue	.vim/colors/solarized.vim	/^    let s:blue        = "DarkBlue"      " 4$/;"	v
+s:border1_bg	.vim/colors/phd.vim	/^let s:border1_bg = s:bg_hl$/;"	v
+s:border1_fg	.vim/colors/phd.vim	/^let s:border1_fg = s:text_minor$/;"	v
+s:bright	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:bright      = "* term=bold cterm=bold"$/;"	v
+s:bright	.vim/colors/solarized.vim	/^    let s:bright      = "* term=bold cterm=bold"$/;"	v
+s:bufNameDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:bufNameDict = {}$/;"	v
+s:bufPathDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:bufPathDict = {}$/;"	v
+s:bufPathSignDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:bufPathSignDict = {}$/;"	v
+s:bufStateDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:bufStateDict = {}$/;"	v
+s:bufUniqNameDict	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:bufUniqNameDict = {}$/;"	v
+s:bundle	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^let s:bundle = {}$/;"	v
+s:c	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:c               = ",undercurl"$/;"	v
+s:c	.vim/colors/solarized.vim	/^    let s:c               = ",undercurl"$/;"	v
+s:colorscheme_list	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:colorscheme_list=[$/;"	v
+s:colorscheme_list	.vim/colors/solarized.vim	/^let s:colorscheme_list=[$/;"	v
+s:constant1	.vim/colors/phd.vim	/^let s:constant1 = '#c08040'$/;"	v
+s:constant2	.vim/colors/phd.vim	/^let s:constant2 = '#d2852b'$/;"	v
+s:constant3	.vim/colors/phd.vim	/^let s:constant3 = '#f2a54b'$/;"	v
+s:control1	.vim/colors/phd.vim	/^let s:control1 = '#f9f7a4'$/;"	v
+s:control2	.vim/colors/phd.vim	/^let s:control2 = '#c9b794'$/;"	v
+s:cterm2gui_dict	.vim/bundle/vim-powerline/autoload/Pl/Hi.vim	/^let s:cterm2gui_dict = {$/;"	v
+s:cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "#00afaf"$/;"	v
+s:cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "#2aa198"$/;"	v
+s:cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "37"$/;"	v
+s:cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "6"$/;"	v
+s:cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:cyan        = "DarkCyan"      " 6$/;"	v
+s:cyan	.vim/colors/solarized.vim	/^    let s:cyan        = "#00afaf"$/;"	v
+s:cyan	.vim/colors/solarized.vim	/^    let s:cyan        = "#2aa198"$/;"	v
+s:cyan	.vim/colors/solarized.vim	/^    let s:cyan        = "37"$/;"	v
+s:cyan	.vim/colors/solarized.vim	/^    let s:cyan        = "6"$/;"	v
+s:cyan	.vim/colors/solarized.vim	/^    let s:cyan        = "DarkCyan"      " 6$/;"	v
+s:darkblue	.vim/colors/phd.vim	/^let s:darkblue = '#32698f'$/;"	v
+s:darkgreen	.vim/colors/phd.vim	/^let s:darkgreen = '#80a050'$/;"	v
+s:debugIndex	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:debugIndex = 0$/;"	v
+s:default_modes	.vim/bundle/vim-powerline/autoload/Pl/Segment.vim	/^let s:default_modes = ['n', 'N', 'v', 'i', 'r', 's']$/;"	v
+s:defaults_list	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:defaults_list=[$/;"	v
+s:defaults_list	.vim/colors/solarized.vim	/^let s:defaults_list=[$/;"	v
+s:delimiterMap	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let s:delimiterMap = {$/;"	v
+s:dirArrows	.vim/bundle/nerdtree/syntax/nerdtree.vim	/^let s:dirArrows = escape(g:NERDTreeDirArrowCollapsible, '~]\\-').escape(g:NERDTreeDirArrowExpandable, '~]\\-')$/;"	v
+s:fg_pdef	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:fg_pdef = s:fg_violet$/;"	v
+s:fg_pdef	.vim/colors/solarized.vim	/^let s:fg_pdef = s:fg_violet$/;"	v
+s:fg_phead	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:fg_phead = s:fg_orange$/;"	v
+s:fg_phead	.vim/colors/solarized.vim	/^let s:fg_phead = s:fg_orange$/;"	v
+s:fg_ptable	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:fg_ptable = s:fg_blue$/;"	v
+s:fg_ptable	.vim/colors/solarized.vim	/^let s:fg_ptable = s:fg_blue$/;"	v
+s:func	.vim/colors/phd.vim	/^let s:func = '#96b2cc'$/;"	v
+s:green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "#5f8700"$/;"	v
+s:green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "#719e07" "experimental$/;"	v
+s:green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "2"$/;"	v
+s:green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "64"$/;"	v
+s:green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:green       = "DarkGreen"     " 2$/;"	v
+s:green	.vim/colors/phd.vim	/^let s:green = '#99bf52'$/;"	v
+s:green	.vim/colors/solarized.vim	/^    let s:green       = "#5f8700"$/;"	v
+s:green	.vim/colors/solarized.vim	/^    let s:green       = "#719e07" "experimental$/;"	v
+s:green	.vim/colors/solarized.vim	/^    let s:green       = "2"$/;"	v
+s:green	.vim/colors/solarized.vim	/^    let s:green       = "64"$/;"	v
+s:green	.vim/colors/solarized.vim	/^    let s:green       = "DarkGreen"     " 2$/;"	v
+s:grey	.vim/colors/phd.vim	/^let s:grey = '#808080'$/;"	v
+s:greyed	.vim/colors/phd.vim	/^let s:greyed = '#687898'$/;"	v
+s:i	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:i           = ""$/;"	v
+s:i	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:i           = ",italic"$/;"	v
+s:i	.vim/colors/solarized.vim	/^    let s:i           = ""$/;"	v
+s:i	.vim/colors/solarized.vim	/^    let s:i           = ",italic"$/;"	v
+s:lazycat_list	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:lazycat_list=[$/;"	v
+s:lazycat_list	.vim/colors/solarized.vim	/^let s:lazycat_list=[$/;"	v
+s:lenSpaceStr	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let s:lenSpaceStr = strlen(s:spaceStr)$/;"	v
+s:light_orange	.vim/colors/phd.vim	/^let s:light_orange = '#fbd461'$/;"	v
+s:light_violet	.vim/colors/phd.vim	/^let s:light_violet = '#a989ac'$/;"	v
+s:lightblue	.vim/colors/phd.vim	/^let s:lightblue = '#72b9bf'$/;"	v
+s:lightgreen	.vim/colors/phd.vim	/^let s:lightgreen = '#e2e9af'$/;"	v
+s:magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "#af005f"$/;"	v
+s:magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "#d33682"$/;"	v
+s:magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "125"$/;"	v
+s:magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "5"$/;"	v
+s:magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:magenta     = "DarkMagenta"   " 5$/;"	v
+s:magenta	.vim/colors/solarized.vim	/^    let s:magenta     = "#af005f"$/;"	v
+s:magenta	.vim/colors/solarized.vim	/^    let s:magenta     = "#d33682"$/;"	v
+s:magenta	.vim/colors/solarized.vim	/^    let s:magenta     = "125"$/;"	v
+s:magenta	.vim/colors/solarized.vim	/^    let s:magenta     = "5"$/;"	v
+s:magenta	.vim/colors/solarized.vim	/^    let s:magenta     = "DarkMagenta"   " 5$/;"	v
+s:maxTabWidth	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:maxTabWidth = 0$/;"	v
+s:miniBufExplBufList	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:miniBufExplBufList = ''$/;"	v
+s:miniBufExplInAutoUpdate	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let s:miniBufExplInAutoUpdate = 0$/;"	v
+s:molokai_original	.vim/bundle/molokai/colors/molokai.vim	/^    let s:molokai_original = 0$/;"	v
+s:molokai_original	.vim/bundle/molokai/colors/molokai.vim	/^    let s:molokai_original = g:molokai_original$/;"	v
+s:molokai_original	.vim/colors/molokai.vim	/^    let s:molokai_original = 0$/;"	v
+s:molokai_original	.vim/colors/molokai.vim	/^    let s:molokai_original = g:molokai_original$/;"	v
+s:n	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:n               = "NONE"$/;"	v
+s:n	.vim/colors/solarized.vim	/^    let s:n               = "NONE"$/;"	v
+s:none	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:none            = "NONE"$/;"	v
+s:none	.vim/colors/solarized.vim	/^    let s:none            = "NONE"$/;"	v
+s:ob	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:ob              = ""$/;"	v
+s:ob	.vim/colors/solarized.vim	/^    let s:ob              = ""$/;"	v
+s:old_cpo	.vim/bundle/nerdtree/plugin/NERD_tree.vim	/^let s:old_cpo = &cpo$/;"	v
+s:options_list	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:options_list=[$/;"	v
+s:options_list	.vim/colors/solarized.vim	/^let s:options_list=[$/;"	v
+s:orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "#cb4b16"$/;"	v
+s:orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "#d75f00"$/;"	v
+s:orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "166"$/;"	v
+s:orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "9"$/;"	v
+s:orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:orange      = "LightRed"      " 1*$/;"	v
+s:orange	.vim/colors/phd.vim	/^let s:orange = '#bba401'$/;"	v
+s:orange	.vim/colors/solarized.vim	/^    let s:orange      = "#cb4b16"$/;"	v
+s:orange	.vim/colors/solarized.vim	/^    let s:orange      = "#d75f00"$/;"	v
+s:orange	.vim/colors/solarized.vim	/^    let s:orange      = "166"$/;"	v
+s:orange	.vim/colors/solarized.vim	/^    let s:orange      = "9"$/;"	v
+s:orange	.vim/colors/solarized.vim	/^    let s:orange      = "LightRed"      " 1*$/;"	v
+s:ou	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:ou              = ""$/;"	v
+s:ou	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:ou          = ",underline"$/;"	v
+s:ou	.vim/colors/solarized.vim	/^    let s:ou              = ""$/;"	v
+s:ou	.vim/colors/solarized.vim	/^    let s:ou          = ",underline"$/;"	v
+s:popup_bg	.vim/colors/phd.vim	/^let s:popup_bg = '#101010'$/;"	v
+s:popup_bg_hl	.vim/colors/phd.vim	/^let s:popup_bg_hl = '#000000'$/;"	v
+s:popup_fg	.vim/colors/phd.vim	/^let s:popup_fg = s:text$/;"	v
+s:popup_fg_hl	.vim/colors/phd.vim	/^let s:popup_fg_hl = s:text_hl$/;"	v
+s:r	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:r               = ",reverse"$/;"	v
+s:r	.vim/colors/solarized.vim	/^    let s:r               = ",reverse"$/;"	v
+s:red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "#af0000"$/;"	v
+s:red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "#dc322f"$/;"	v
+s:red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "1"$/;"	v
+s:red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "124"$/;"	v
+s:red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:red         = "DarkRed"       " 1$/;"	v
+s:red	.vim/colors/phd.vim	/^let s:red = '#d07346'$/;"	v
+s:red	.vim/colors/solarized.vim	/^    let s:red         = "#af0000"$/;"	v
+s:red	.vim/colors/solarized.vim	/^    let s:red         = "#dc322f"$/;"	v
+s:red	.vim/colors/solarized.vim	/^    let s:red         = "1"$/;"	v
+s:red	.vim/colors/solarized.vim	/^    let s:red         = "124"$/;"	v
+s:red	.vim/colors/solarized.vim	/^    let s:red         = "DarkRed"       " 1$/;"	v
+s:s	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:s               = ",standout"$/;"	v
+s:s	.vim/colors/solarized.vim	/^    let s:s               = ",standout"$/;"	v
+s:segment_mods	.vim/bundle/vim-powerline/autoload/Pl/Mod.vim	/^let s:segment_mods = []$/;"	v
+s:solarized_termtrans_default	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:solarized_termtrans_default = 0$/;"	v
+s:solarized_termtrans_default	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:solarized_termtrans_default = 1$/;"	v
+s:solarized_termtrans_default	.vim/colors/solarized.vim	/^    let s:solarized_termtrans_default = 0$/;"	v
+s:solarized_termtrans_default	.vim/colors/solarized.vim	/^    let s:solarized_termtrans_default = 1$/;"	v
+s:sortKeyFormat	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^    let s:sortKeyFormat = "%0" . float2nr(ceil(log10(len(g:NERDTreeSortOrder)))) . "d"$/;"	v
+s:sortKeyFormat	.vim/bundle/nerdtree/lib/nerdtree/path.vim	/^    let s:sortKeyFormat = "%04d"$/;"	v
+s:sp_back	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_back      = ""$/;"	v
+s:sp_back	.vim/colors/solarized.vim	/^    let s:sp_back      = ""$/;"	v
+s:sp_base0	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base0     = ""$/;"	v
+s:sp_base0	.vim/colors/solarized.vim	/^    let s:sp_base0     = ""$/;"	v
+s:sp_base00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base00    = ""$/;"	v
+s:sp_base00	.vim/colors/solarized.vim	/^    let s:sp_base00    = ""$/;"	v
+s:sp_base01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base01    = ""$/;"	v
+s:sp_base01	.vim/colors/solarized.vim	/^    let s:sp_base01    = ""$/;"	v
+s:sp_base02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base02    = ""$/;"	v
+s:sp_base02	.vim/colors/solarized.vim	/^    let s:sp_base02    = ""$/;"	v
+s:sp_base03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base03    = ""$/;"	v
+s:sp_base03	.vim/colors/solarized.vim	/^    let s:sp_base03    = ""$/;"	v
+s:sp_base1	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base1     = ""$/;"	v
+s:sp_base1	.vim/colors/solarized.vim	/^    let s:sp_base1     = ""$/;"	v
+s:sp_base2	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base2     = ""$/;"	v
+s:sp_base2	.vim/colors/solarized.vim	/^    let s:sp_base2     = ""$/;"	v
+s:sp_base3	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_base3     = ""$/;"	v
+s:sp_base3	.vim/colors/solarized.vim	/^    let s:sp_base3     = ""$/;"	v
+s:sp_blue	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_blue      = ""$/;"	v
+s:sp_blue	.vim/colors/solarized.vim	/^    let s:sp_blue      = ""$/;"	v
+s:sp_cyan	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_cyan      = ""$/;"	v
+s:sp_cyan	.vim/colors/solarized.vim	/^    let s:sp_cyan      = ""$/;"	v
+s:sp_green	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_green     = ""$/;"	v
+s:sp_green	.vim/colors/solarized.vim	/^    let s:sp_green     = ""$/;"	v
+s:sp_magenta	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_magenta   = ""$/;"	v
+s:sp_magenta	.vim/colors/solarized.vim	/^    let s:sp_magenta   = ""$/;"	v
+s:sp_none	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_none      = ""$/;"	v
+s:sp_none	.vim/colors/solarized.vim	/^    let s:sp_none      = ""$/;"	v
+s:sp_orange	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_orange    = ""$/;"	v
+s:sp_orange	.vim/colors/solarized.vim	/^    let s:sp_orange    = ""$/;"	v
+s:sp_red	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_red       = ""$/;"	v
+s:sp_red	.vim/colors/solarized.vim	/^    let s:sp_red       = ""$/;"	v
+s:sp_violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_violet    = ""$/;"	v
+s:sp_violet	.vim/colors/solarized.vim	/^    let s:sp_violet    = ""$/;"	v
+s:sp_yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:sp_yellow    = ""$/;"	v
+s:sp_yellow	.vim/colors/solarized.vim	/^    let s:sp_yellow    = ""$/;"	v
+s:spaceStr	.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim	/^let s:spaceStr = ' '$/;"	v
+s:structure	.vim/colors/phd.vim	/^let s:structure =  '#76cc68'$/;"	v
+s:t_none	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:t_none          = "NONE"$/;"	v
+s:t_none	.vim/colors/solarized.vim	/^    let s:t_none          = "NONE"$/;"	v
+s:temp00	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:temp00      = s:base00$/;"	v
+s:temp00	.vim/colors/solarized.vim	/^    let s:temp00      = s:base00$/;"	v
+s:temp01	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:temp01      = s:base01$/;"	v
+s:temp01	.vim/colors/solarized.vim	/^    let s:temp01      = s:base01$/;"	v
+s:temp02	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:temp02      = s:base02$/;"	v
+s:temp02	.vim/colors/solarized.vim	/^    let s:temp02      = s:base02$/;"	v
+s:temp03	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:temp03      = s:base03$/;"	v
+s:temp03	.vim/colors/solarized.vim	/^    let s:temp03      = s:base03$/;"	v
+s:terminal_italic	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^            let s:terminal_italic=1$/;"	v
+s:terminal_italic	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:terminal_italic=0 " terminals will be guilty until proven compatible$/;"	v
+s:terminal_italic	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:terminal_italic=1 " TODO: could refactor to not require this at all$/;"	v
+s:terminal_italic	.vim/colors/solarized.vim	/^            let s:terminal_italic=1$/;"	v
+s:terminal_italic	.vim/colors/solarized.vim	/^    let s:terminal_italic=0 " terminals will be guilty until proven compatible$/;"	v
+s:terminal_italic	.vim/colors/solarized.vim	/^    let s:terminal_italic=1 " TODO: could refactor to not require this at all$/;"	v
+s:terms_italic	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:terms_italic=[$/;"	v
+s:terms_italic	.vim/colors/solarized.vim	/^let s:terms_italic=[$/;"	v
+s:terms_noitalic	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^let s:terms_noitalic=[$/;"	v
+s:terms_noitalic	.vim/colors/solarized.vim	/^let s:terms_noitalic=[$/;"	v
+s:text	.vim/colors/phd.vim	/^let s:text = '#e0e0e0'$/;"	v
+s:text_hl	.vim/colors/phd.vim	/^let s:text_hl = '#ffffff'$/;"	v
+s:text_minor	.vim/colors/phd.vim	/^let s:text_minor = '#909090'$/;"	v
+s:text_very_minor	.vim/colors/phd.vim	/^let s:text_very_minor = '#304050'$/;"	v
+s:tree_up_dir_line	.vim/bundle/nerdtree/syntax/nerdtree.vim	/^let s:tree_up_dir_line = '.. (up a dir)'$/;"	v
+s:u	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:u           = ""$/;"	v
+s:u	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:u           = ",underline"$/;"	v
+s:u	.vim/colors/solarized.vim	/^    let s:u           = ""$/;"	v
+s:u	.vim/colors/solarized.vim	/^    let s:u           = ",underline"$/;"	v
+s:violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "#5f5faf"$/;"	v
+s:violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "#6c71c4"$/;"	v
+s:violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "13"$/;"	v
+s:violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "61"$/;"	v
+s:violet	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:violet      = "LightMagenta"  " 5*$/;"	v
+s:violet	.vim/colors/phd.vim	/^let s:violet = '#99699c'$/;"	v
+s:violet	.vim/colors/solarized.vim	/^    let s:violet      = "#5f5faf"$/;"	v
+s:violet	.vim/colors/solarized.vim	/^    let s:violet      = "#6c71c4"$/;"	v
+s:violet	.vim/colors/solarized.vim	/^    let s:violet      = "13"$/;"	v
+s:violet	.vim/colors/solarized.vim	/^    let s:violet      = "61"$/;"	v
+s:violet	.vim/colors/solarized.vim	/^    let s:violet      = "LightMagenta"  " 5*$/;"	v
+s:vmode	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:vmode       = "cterm"$/;"	v
+s:vmode	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:vmode       = "gui"$/;"	v
+s:vmode	.vim/colors/solarized.vim	/^    let s:vmode       = "cterm"$/;"	v
+s:vmode	.vim/colors/solarized.vim	/^    let s:vmode       = "gui"$/;"	v
+s:yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "#af8700"$/;"	v
+s:yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "#b58900"$/;"	v
+s:yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "136"$/;"	v
+s:yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "3"$/;"	v
+s:yellow	.vim/bundle/vim-colors-solarized/colors/solarized.vim	/^    let s:yellow      = "DarkYellow"    " 3$/;"	v
+s:yellow	.vim/colors/phd.vim	/^let s:yellow = '#e3d756'$/;"	v
+s:yellow	.vim/colors/solarized.vim	/^    let s:yellow      = "#af8700"$/;"	v
+s:yellow	.vim/colors/solarized.vim	/^    let s:yellow      = "#b58900"$/;"	v
+s:yellow	.vim/colors/solarized.vim	/^    let s:yellow      = "136"$/;"	v
+s:yellow	.vim/colors/solarized.vim	/^    let s:yellow      = "3"$/;"	v
+s:yellow	.vim/colors/solarized.vim	/^    let s:yellow      = "DarkYellow"    " 3$/;"	v
+scale_matrix	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_matrix = psMat.scale(font_dim['width'] \/ sym_dim['width'], 1)$/;"	v
+scale_ratio	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_ratio = font_dim['height'] \/ sym_dim['height']$/;"	v
+scale_ratio	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			scale_ratio = font_dim['width'] \/ sym_dim['width']$/;"	v
+showMenu	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:showMenu(node)$/;"	f
+sign	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:sign(status)$/;"	f
+strip	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:strip(str)$/;"	f
+sym_attr	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_attr = SYM_ATTR[sym_glyph.unicode]$/;"	v
+sym_dim	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^			sym_dim = get_dim(font[sym_glyph.unicode])$/;"	v
+sym_dim	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_dim = get_dim(font[sym_glyph.unicode])$/;"	v
+sym_dim	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_dim = get_dim(sym_glyph)$/;"	v
+sym_ycenter	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^		sym_ycenter  = sym_dim['height'] \/ 2$/;"	v
+symbols	.vim/bundle/vim-powerline/fontpatcher/fontpatcher	/^	symbols = fontforge.open(args.symbol_font)$/;"	v
+sync	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:sync(bang, bundle) abort$/;"	f
+system	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! s:system(cmd) abort$/;"	f
+t:miniBufExplAutoUpdate	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let t:miniBufExplAutoUpdate = 0$/;"	v
+t:miniBufExplSortBy	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let t:miniBufExplSortBy = g:miniBufExplSortBy$/;"	v
+t:skipEligibleBuffersCheck	.vim/bundle/minibufexpl.vim/plugin/minibufexpl.vim	/^let t:skipEligibleBuffersCheck = 0$/;"	v
+toggleIgnoreFilter	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleIgnoreFilter()$/;"	f
+toggleShowBookmarks	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleShowBookmarks()$/;"	f
+toggleShowFiles	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleShowFiles()$/;"	f
+toggleShowHidden	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleShowHidden()$/;"	f
+toggleZoom	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:toggleZoom()$/;"	f
+togglebg#map	.vim/bundle/vim-colors-solarized/autoload/togglebg.vim	/^function! togglebg#map(mapActivation)$/;"	f
+upDirCurrentRootClosed	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootClosed()$/;"	f
+upDirCurrentRootOpen	.vim/bundle/nerdtree/autoload/nerdtree/ui_glue.vim	/^function! s:upDirCurrentRootOpen()$/;"	f
+view_changelog	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! s:view_changelog()$/;"	f
+view_log	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! s:view_log()$/;"	f
+vundle#begin	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^func! vundle#begin(...) abort$/;"	f
+vundle#bundle_dir	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^let vundle#bundle_dir = expand('$HOME\/.vim\/bundle', 1)$/;"	v
+vundle#bundles	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^let vundle#bundles = []$/;"	v
+vundle#config#activate_bundles	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! vundle#config#activate_bundles()$/;"	f
+vundle#config#bundle	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! vundle#config#bundle(arg, ...)$/;"	f
+vundle#config#init	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! vundle#config#init()$/;"	f
+vundle#config#init_bundle	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! vundle#config#init_bundle(name, opts)$/;"	f
+vundle#config#require	.vim/bundle/Vundle.vim/autoload/vundle/config.vim	/^func! vundle#config#require(bundles) abort$/;"	f
+vundle#end	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^func! vundle#end(...) abort$/;"	f
+vundle#installer#clean	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#clean(bang) abort$/;"	f
+vundle#installer#delete	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#delete(bang, dir_name) abort$/;"	f
+vundle#installer#docs	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#docs() abort$/;"	f
+vundle#installer#helptags	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#helptags(bundles) abort$/;"	f
+vundle#installer#install	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#install(bang, name) abort$/;"	f
+vundle#installer#install_and_require	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#install_and_require(bang, name) abort$/;"	f
+vundle#installer#list	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#list(bang) abort$/;"	f
+vundle#installer#new	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#new(bang, ...) abort$/;"	f
+vundle#installer#run	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#run(func_name, name, ...) abort$/;"	f
+vundle#installer#shellesc	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#shellesc(cmd) abort$/;"	f
+vundle#installer#shellesc_cd	.vim/bundle/Vundle.vim/autoload/vundle/installer.vim	/^func! vundle#installer#shellesc_cd(cmd) abort$/;"	f
+vundle#lazy_load	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^let vundle#lazy_load = 0$/;"	v
+vundle#log	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^let vundle#log = []$/;"	v
+vundle#rc	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^func! vundle#rc(...) abort$/;"	f
+vundle#scripts#all	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! vundle#scripts#all(bang, ...)$/;"	f
+vundle#scripts#bundle_names	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! vundle#scripts#bundle_names(names)$/;"	f
+vundle#scripts#complete	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! vundle#scripts#complete(a,c,d)$/;"	f
+vundle#scripts#reload	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! vundle#scripts#reload() abort$/;"	f
+vundle#scripts#view	.vim/bundle/Vundle.vim/autoload/vundle/scripts.vim	/^func! vundle#scripts#view(title, headers, results)$/;"	f
+vundle#updated_bundles	.vim/bundle/Vundle.vim/autoload/vundle.vim	/^let vundle#updated_bundles = []$/;"	v
