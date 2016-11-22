@@ -51,10 +51,8 @@ function! AddPHPFuncList()
     set complete-=k complete+=k
 endfunction
 
-
-
-
-
+" 定义退出vim快捷键
+nnoremap <C-d> :shel <CR>
 
 nnoremap <leader>tag :!ctags -R<CR>
 nnoremap <leader>tt :source g:vimrc_home.'/test/test.vim'<CR>
