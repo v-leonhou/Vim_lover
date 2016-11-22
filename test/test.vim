@@ -1,28 +1,19 @@
-let my = 'hh'
-echo g:my."/test/a.vim"
-"set rtp += fnameescape(g:my .'/houlu')
-"echo fnameescape(g:my .'/houlu')
 
-"source '/vagrant/data/Vim_lover/test/a.vim'
+let g:vimrc_home = '/vagrant/data/Vim_lover'
 
-" 环境设置
-if has('gui_running') && has('gui_win32')
-    " 配置文件变量
-    let g:my_vimrc = $HOME.'\vimfiles\vimrc'
-    let g:vimrc_home = $HOME.'\vimfiles'
 
-    set guifont = Bitstream_Vera_Sans_Mono:h11:cANSI " 英文字体
-    set guifontwide = simhei:h11:cGB2312 " 英文字体
-elseif has('unix')
-    let g:my_vimrc = '/vagrant/data/Vim_lover/vimrc'
-    let g:vimrc_home = '/vagrant/data/Vim_lover'
-endif
-let jj = ''
-let kk = g:my_vimrc.'/.vim/sss'
-let mm = g:vimrc_home .'/.vim/bundle/Vundle.vim'
-let kg = g:vimrc_home .'/.vim/bundle/Vundle.vim'
-jj += g:kg
-echo kk
-echo mm
-echo kg
-echo jj 
+" 定义php语法函数
+"function! AddPHPFuncList()
+    set dict-= "{g:vimrc_home}/.vim/php_funclist.txt" dict+="{g:vimrc_home}/.vim/php_funclist.txt"
+    set complete-=k complete+=k
+"endfunction
+
+"echo type('/vagrant/data/vim/.vim/bundle/Vundle.vim')
+"echo type(g:vimrc_home .'/.vim/bundle/Vundle.vim')
+"let &rtp = g:vimrc_home .'/.vim/bundle/Vundle.vim',$VIMRUNTIME
+"let &rtp = g:vimrc_home."/vagrant/data/vim/bundle/Vundle.vim,".$VIMRUNTIME
+"echo type(&rtp)
+"
+"exec 'dict+='.fnameescape(g:vimrc_home.'/vag/')
+ "exec 'set dict-= '.{g:vimrc_home}.'/.vim/php_funclist.txt'.' dict+='.{g:vimrc_home}.'/.vim/php_funclist.txt'
+

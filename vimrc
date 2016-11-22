@@ -7,36 +7,22 @@ syntax enable                      "开启语法高亮
 syntax on                          "允许用指定语法高亮配色方案替换默认方案
 syntax sync fromstart
 
-" 环境设置
-if has('gui_running') && has('gui_win32')
-    " 配置文件变量
-    let g:my_vimrc = $HOME.'\vimfiles\vimrc'
-    let g:vimrc_home = $HOME.'\vimfiles'
-
-    set guifont = Bitstream_Vera_Sans_Mono:h11:cANSI " 英文字体
-    set guifontwide = simhei:h11:cGB2312 " 英文字体
-elseif has('unix')
-    let g:my_vimrc = '/vagrant/data/Vim_lover/vimrc'
-    let g:vimrc_home = '/vagrant/data/Vim_lover'
-endif
-
-
 " VIM 显示配置
 " solarized 主题配色，需要安装vim-colors-solarized插件开启
 "Solarized VIM color scheme
-colorscheme default 
+"colorscheme default 
 "colorscheme phd
-"colorscheme molokai 
+colorscheme molokai 
 "colorscheme solarized
 set background=dark
 
 set laststatus=2                    " 总是显示状态栏
 set ruler                           " 显示光标当前位置
-"set cursorline                      " 高亮显示当前行
-"set cursorcolumn                    " 高亮显示当前列
+set cursorline                      " 高亮显示当前行
+set cursorcolumn                    " 高亮显示当前列
 
 set guifont=YaHei\ Consolas\ Hybrid\ 11.5
-set nowrap                          " 没有wrap文件
+set wrap                          " 屏幕显示不下不自动折行 
 
 "设置vi打开文件字符编码
 set encoding=utf-8
@@ -44,6 +30,7 @@ set fileencoding=utf-8
 set termencoding=utf-8
 
 set completeopt -=preview
+set completeopt +=noinsert,noselect
 
 set nocompatible                    " be iMproved, required "不兼容vi模式
 set relativenumber                  " 相对行号
@@ -80,30 +67,28 @@ setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含�
 
     " 撤销缓存目录,撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
 if exists("&undodir")
-    exec 'set undodir='.fnameescape(g:vimrc_home.'/tmp/')                 
+    exec 'set undodir='.fnameescape(g:my_vimrc_home.'/tmp/')                 
     exec 'set undofile'                        
 endif
 
 " vundle管理插件
-set rtp+=/vagrant/data/Vim_lover/.vim/bundle/Vundle.vim
-"set rtp+= g:vimrc_home .'/.vim/bundle/Vundle.vim'
-call vundle#begin('/vagrant/data/Vim_lover/.vim/bundle/')
+let &rtp = g:my_vimrc_home .'/.vim/bundle/Vundle.vim,'.$VIMRUNTIME
+call vundle#begin(g:my_vimrc_home.'/.vim/bundle/')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
-"Plugin '/vagrant/data/Vim_lover/.vim/colors/molokai.vim'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
-"Plugin 'file:///vagrant/data/Vim_lover/.vim/bundle/YouCompleteMe'
-call vundle#end()            " required
+call vundle#end()            " 必须 
 
-source /vagrant/data/Vim_lover/.vim/config/plugin.vim
-source /vagrant/data/Vim_lover/.vim/config/keyboard.vim
-source /vagrant/data/Vim_lover/.vim/config/func.vim
+"source /vagrant/data/Vim_lover/.vim/config/plugin.vim
+exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/plugin.vim')
+exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/keyboard.vim')
+exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/func.vim')
 
-    "au BufWritePost * call system("ctags -R")  " 保存文件后自动生成tag
-    au BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
-    au FileType php call AddPHPFuncList() 
+"au BufWritePost * call system("ctags -R")  " 保存文件后自动生成tag
+au BufWritePost $MYVIMRC source $MYVIMRC "vimrc保存自动生效，重启vim
+au FileType php call AddPHPFuncList() 
