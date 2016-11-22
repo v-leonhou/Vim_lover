@@ -14,15 +14,15 @@ syntax sync fromstart
 "colorscheme phd
 colorscheme molokai 
 "colorscheme solarized
-set background=dark
+"set background=dark
 
 set laststatus=2                    " 总是显示状态栏
 set ruler                           " 显示光标当前位置
-set cursorline                      " 高亮显示当前行
-set cursorcolumn                    " 高亮显示当前列
+"set cursorline                      " 高亮显示当前行
+"set cursorcolumn                    " 高亮显示当前列
 
-set guifont=YaHei\ Consolas\ Hybrid\ 11.5
-set wrap                          " 屏幕显示不下不自动折行 
+"set guifont=YaHei\ Consolas\ Hybrid\ 11.5
+set nowrap                          " 屏幕显示不下不自动折行 
 
 "设置vi打开文件字符编码
 set encoding=utf-8
@@ -72,8 +72,9 @@ if exists("&undodir")
 endif
 
 " vundle管理插件
-let &rtp = g:my_vimrc_home .'/.vim/bundle/Vundle.vim,'.$VIMRUNTIME
-call vundle#begin(g:my_vimrc_home.'/.vim/bundle/')
+let &rtp = g:my_vimrc_home.'/.vim,'.g:my_vimrc_home.'/.vim/bundle/Vundle.vim,'.$VIMRUNTIME
+call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
+call vundle#begin(g:my_vimrc_home.'/.vim/bundle/')  " vundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree' 
@@ -82,6 +83,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
+Plugin 'php-doc.vim'
 call vundle#end()            " 必须 
 
 "source /vagrant/data/Vim_lover/.vim/config/plugin.vim
