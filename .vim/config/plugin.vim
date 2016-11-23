@@ -14,10 +14,10 @@ let NERDTreeWinPos="left"           " 设置子窗口位置
 "hi IndentGuidesEven guibg=red ctermbg=4
 
 "" IndentGuides 快捷键
-let g:indent_guides_enable_on_vim_startup=1         " 随 vim 自启动 
-let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进
-let g:indent_guides_guide_size=2                                       " 色块宽度
-:nmap <silent> <Leader>i <Plug>IndentGuidesToggle    " 快捷键 i 开/关缩进可视化
+"let g:indent_guides_enable_on_vim_startup=1         " 随 vim 自启动 
+"let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进
+"let g:indent_guides_guide_size=2                                       " 色块宽度
+":nnoremap <silent> <Leader>i <Plug>IndentGuidesToggle    " 快捷键 i 开/关缩进可视化
 
 " 快速查找
 

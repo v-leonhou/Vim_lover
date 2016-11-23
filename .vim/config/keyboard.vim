@@ -1,7 +1,9 @@
 "定义快捷键的前缀键
 let mapleader=";"
 
+" ctr键前缀
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-d> :shel<CR>
 
 " 显示/隐藏 MiNiBufExplorer窗口
 map <Leader>f :MBEToggle<cr>
@@ -15,10 +17,9 @@ map <leader>d :MBEbp<cr>
  "<Leader>cu 取消选中注释
 
 " 保存当前工作环境，撤销配置，在vim新版, 才有用
-set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize"
-map <leaders>c :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存快捷键
-map <leaders>r :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
-
+nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存快捷键
+nnoremap <leader>sr :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
+nnoremap <leader>sv :source $MYVIMRC<cr>
 " 替换快捷键
 function! Replace(confirm,wholeword,replace)
     wa
@@ -55,7 +56,6 @@ endfunction
 
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " 定义退出vim快捷键
 "nnoremap <C-d> :shel <CR>
