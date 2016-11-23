@@ -14,12 +14,12 @@ syntax sync fromstart
 "colorscheme phd
 colorscheme molokai 
 "colorscheme solarized
-"set background=dark
+set background=dark
 
 set laststatus=2                    " 总是显示状态栏
 set ruler                           " 显示光标当前位置
-"set cursorline                      " 高亮显示当前行
-"set cursorcolumn                    " 高亮显示当前列
+set cursorline                      " 高亮显示当前行
+set cursorcolumn                    " 高亮显示当前列
 
 "set guifont=YaHei\ Consolas\ Hybrid\ 11.5
 set nowrap                          " 屏幕显示不下不自动折行 
@@ -36,34 +36,34 @@ set nocompatible                    " be iMproved, required "不兼容vi模式
 set relativenumber                  " 相对行号
 set nu                              " 显示行号
 set numberwidth=2                   " 行号宽度
-set autoindent                      " 自动对齐
 set expandtab                       " 将制表符扩展为空格
 set tabstop=4                       " 设置编辑时制表符占用空格数
 set shiftwidth=4                 	" 设置格式化时制表符占用空格数
 set softtabstop=4                   " 将vim把连续数量空格视为制表符
 set ts=4                            " 设置tab宽度为四个空格
+set lbr                             " 智能换行
 set smartindent                     " 智能对齐方式
-set autoindent                      " automatically indent new line, 自动对齐
+"set autoindent                      " automatically indent new line, 自动对齐
 set showmatch                       " 高亮显示匹配括号, 在输入括号时光标会短暂地跳到与之相匹配的括号处
 set matchtime=2                     " 匹配括号高亮的时间（单位是十分之一秒）
-set lbr                             " 智能换行
 set magic                           " 选择括号自动匹对闭合的括号
 
 " 搜索
 set incsearch                       " 当vi中查找的时候从键入时就开始匹配
 set hlsearch                        " 高亮搜索结果
 set ignorecase                      " 搜索时不区分大小写，如果键入了大写字母则区分大小写 
-set noswapfile                                     " 设置不生成swp文件
+set noswapfile                      " 设置不生成swp文件
 set wildmenu                        " vim 自身命令行模式智能补全
+set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize" " 保存当前编辑环境选项
 
 " 代码折叠
-set nofoldenable                    " 启动vim时关闭折叠代码
 set foldmethod=indent               " 基于缩进折叠
 set foldcolumn=0                    " 设置折叠的宽度, 就是折叠之后到底显示几行
 setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含多少个折叠
-"set foldmethod=syntax              " 基于语法折叠
-"set foldenable                      " 允许自动折叠
-"set foldmethod=marker               " 设置折叠的函数为marker， markervi自带
+set foldmethod=syntax               " 基于语法折叠
+"set foldmethod=marker              " 设置折叠的函数为marker， markervi自带
+set foldenable                      " 允许自动折叠
+"set nofoldenable                   " 启动vim时关闭折叠代码
 
     " 撤销缓存目录,撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
 if exists("&undodir")
@@ -76,14 +76,13 @@ let &rtp = g:my_vimrc_home.'/.vim,'.g:my_vimrc_home.'/.vim/bundle/Vundle.vim,'.$
 call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
 call vundle#begin(g:my_vimrc_home.'/.vim/bundle/')  " vundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
-Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
 Plugin 'php-doc.vim'
+"Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 call vundle#end()            " 必须 
 
 "source /vagrant/data/Vim_lover/.vim/config/plugin.vim
