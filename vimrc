@@ -7,13 +7,14 @@ syntax enable                      "开启语法高亮
 "colorscheme phd
 colorscheme molokai 
 "colorscheme solarized
-set background=dark
-"set guifont=YaHei\ Consolas\ Hybrid\ 11.5
+"set background=dark
+set guifont=YaHei\ Consolas\ Hybrid\ 11.5
 "set gfn=Monaco:h10 	                " 修改字体和大小                                                                  
 set helplang=cn						" 显示中文帮助
 set laststatus=2                    " 总是显示状态栏
 set fileformats=unix                " 设置文件格式
 "set transparency=10                " 设置背景透明度
+set t_Co =256
 
 " 行列
 set relativenumber                  " 相对行号
