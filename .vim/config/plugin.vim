@@ -41,20 +41,20 @@ let g:snips_author  = "leonhou <764436364@qq.com>"
 "" => autocmd 自动加载
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "au FileType php setlocal dict+=~/.vim/swoole_funclist.dict
-au FileType c setlocal dict+=~/.vim/dict/c.dict
+exec 'au FileType c setlocal dict+='.g:my_vimrc_home.'/.vim/dict/c.dict'
 "" 太卡了，里面都不知道是什么函数来的
 ""au FileType go setlocal dict+=~/.vim/dict/go.dict
 "" 让html和smarty模板能调用字典
-au FileType html,htm,smarty setlocal dict+=~/.vim/dict/css.dict
-au FileType html,htm,smarty setlocal dict+=~/.vim/dict/javascript.dict
+exec 'au FileType html,htm,smarty setlocal dict+='.g:my_vimrc_home.'/.vim/dict/css.dict'
+exec 'au FileType html,htm,smarty setlocal dict+='.g:my_vimrc_home.'/.vim/dict/javascript.dict'
 au FileType html,htm,smarty let g:javascript_enable_domhtmlcss = 1
 "au Filetype java setlocal omnifunc=javacomplete#Complete
 "" vim无法认出json，遇到json后缀的，告诉一下vim这个是json
 au BufRead,BufNewFile *.json set filetype=json
 
 "" 新建文件模板, 创建一个skeletons目录
-autocmd BufNewFile *.php 0r ~/.vim/skeletons/php.skel
-autocmd BufNewFile *.json 0r ~/.vim/skeletons/json.skel
+exec 'autocmd BufNewFile *.php 0r '.g:my_vimrc_home.'/.vim/skeletons/php.skel'
+exec 'autocmd BufNewFile *.json 0r '.g:my_vimrc_home.'/.vim/skeletons/json.skel'
 "autocmd BufNewFile *.go 0r ~/.vim/skeletons/go.skel
 "autocmd BufNewFile *.html 0r ~/.vim/skeletons/tpl.skel
 "autocmd BufNewFile *.tpl 0r ~/.vim/skeletons/tpl.skel
