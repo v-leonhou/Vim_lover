@@ -94,9 +94,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'php.vim'
+Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
 Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 Plugin 'plasticboy/vim-markdown'               
+Plugin 'shawncplus/phpcomplete.vim'               
 Plugin 'vim-scripts/Pydiction'                  "dictBundle补全
 Plugin 'vim-scripts/indentLine.vim'         "对齐线
 "Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进

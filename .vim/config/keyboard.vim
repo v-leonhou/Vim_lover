@@ -8,6 +8,14 @@ nnoremap <C-d> :shel<CR>                                         " 定义退出v
 nnoremap <Leader>f :MBEToggle<cr>
 nnoremap <leader>a :MBEbn<cr>
 nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
+nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
+noremap <C-J>     <C-W>j
+noremap <C-K>     <C-W>k
+noremap <C-H>     <C-W>h
+noremap <C-L>     <C-W>l
+noremap <C-TAB>   <C-W>w
+noremap <C-S-TAB> <C-W>W
+
 "nnoremap <leader>mm :%s///g<CR>
 noremap  <leader>mm :%s/<C-V><cr>//ge<cr>'tzt'm  
 nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存当前工作环境，撤销配置，在vim新版, 才有用
