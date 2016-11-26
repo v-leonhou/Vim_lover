@@ -78,7 +78,7 @@ let g:pdv_cfg_CommentSingle = "//"
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
 let g:pdv_cfg_Version = "2.7.0"
-let g:pdv_cfg_Author = "seatle <seatle@foxmail.com>"
+let g:pdv_cfg_Author = "leonhou<764436364@qq.com>"
 let g:pdv_cfg_Copyright = "1997-" . strftime("%Y") . " The PHP Group"
 let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
 

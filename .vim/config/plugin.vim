@@ -4,15 +4,17 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "autocmd VimEnter * NERDTree "启动Vim时自动打开nerdtree
 let g:NERDTreeWinPos          = "left"
-let g:NERDTreeWinSize         = 30
+let g:NERDTreeWinSize         = 20
 let g:NERDTreeShowLineNumbers = 0
 "let g:NERDTreeQuitOnOpen     = 1
 let g:NERDTreeMouseMode       = 1
 let g:NERDChristmasTree       = 1
 "let NERDTreeChDirMode        = 2 "打开书签时，自动将Vim的pwd设为打开的目录，如果你的项目有tags文件，你会发现这个命令很有帮助
-map <C-\> <plug>NERDCommenterToggle  " 给批量注释设置快捷键
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" plugin tagbar 
+let g:tagbar_width = 6
+let g:tagbar_autoclose = 1
+let g:tagbar_autofocus = 1
 
 "设置NERDTree的快捷键ctr+n,NERDTree相关命令
 let NERDTreeWinSize=16
@@ -21,6 +23,42 @@ let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件
 let NERDTreeMinimalUI=0            " 子窗口不显示冗余帮助信息
 let NERDTreeWinPos="left"           " 设置子窗口位置
 
+" vim-powerline 插件快捷键
+let g:solarized_termcolors=16                      " powerline 插件状态栏风格
+let g:Powerline_colorsscheme='molokai'        " powerline 设置状态栏主题风格
+
+" molokai 主题
+let g:molokai_original = 1
+"let g:rehash256 = 1 " 256色风格
+
+"" 跳过tpl，html 文件的语法检查，插件syntastic的配置
+let g:syntastic_ignore_files=['.*\.tpl$', '.*\.html$']
+
+"" 4.snipMate变量定义
+let g:snips_author  = "leonhou <764436364@qq.com>"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => autocmd 自动加载
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"au FileType php setlocal dict+=~/.vim/swoole_funclist.dict
+au FileType c setlocal dict+=~/.vim/dict/c.dict
+"" 太卡了，里面都不知道是什么函数来的
+""au FileType go setlocal dict+=~/.vim/dict/go.dict
+"" 让html和smarty模板能调用字典
+au FileType html,htm,smarty setlocal dict+=~/.vim/dict/css.dict
+au FileType html,htm,smarty setlocal dict+=~/.vim/dict/javascript.dict
+au FileType html,htm,smarty let g:javascript_enable_domhtmlcss = 1
+"au Filetype java setlocal omnifunc=javacomplete#Complete
+"" vim无法认出json，遇到json后缀的，告诉一下vim这个是json
+au BufRead,BufNewFile *.json set filetype=json
+
+"" 新建文件模板, 创建一个skeletons目录
+autocmd BufNewFile *.php 0r ~/.vim/skeletons/php.skel
+autocmd BufNewFile *.json 0r ~/.vim/skeletons/json.skel
+"autocmd BufNewFile *.go 0r ~/.vim/skeletons/go.skel
+"autocmd BufNewFile *.html 0r ~/.vim/skeletons/tpl.skel
+"autocmd BufNewFile *.tpl 0r ~/.vim/skeletons/tpl.skel
+"autocmd BufNewFile *.java 0r ~/.vim/skeletons/java.skel
 
 "解决没有主题时highlight group not found: Normal报错问题
 "let g:indent_guides_auto_colors = 0
@@ -32,18 +70,6 @@ let NERDTreeWinPos="left"           " 设置子窗口位置
 "let g:indent_guides_start_level=2                   " 从第二层开始可视化显示缩进
 "let g:indent_guides_guide_size=2                                       " 色块宽度
 ":nnoremap <silent> <Leader>i <Plug>IndentGuidesToggle    " 快捷键 i 开/关缩进可视化
-
-" 快速查找
-
-" vim-powerline 插件快捷键
-let g:solarized_termcolors=16                      " powerline 插件状态栏风格
-let g:Powerline_colorsscheme='solarized256'        " powerline 设置状态栏主题风格
-
-
-" molokai 主题
-"let g:molokai_original = 1
-let g:rehash256 = 1 " 256色风格
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope setting
@@ -91,31 +117,6 @@ let g:rehash256 = 1 " 256色风格
 "let maplocalleader = "\\"
 "let MRU_Window_Height = 10
 
-"" 4.snipMate变量定义
-"let g:snips_author  = "seatle <seatle@foxmail.com>"
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" => autocmd 自动加载
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"au FileType php setlocal dict+=~/.vim/swoole_funclist.dict
-"au FileType c setlocal dict+=~/.vim/dict/c.dict
-"" 太卡了，里面都不知道是什么函数来的
-""au FileType go setlocal dict+=~/.vim/dict/go.dict
-"" 让html和smarty模板能调用字典
-"au FileType html,htm,smarty setlocal dict+=~/.vim/dict/css.dict
-"au FileType html,htm,smarty setlocal dict+=~/.vim/dict/javascript.dict
-"au FileType html,htm,smarty let g:javascript_enable_domhtmlcss = 1
-"au Filetype java setlocal omnifunc=javacomplete#Complete
-"" vim无法认出json，遇到json后缀的，告诉一下vim这个是json
-"au BufRead,BufNewFile *.json set filetype=json
-
-"" 新建文件模板, 创建一个skeletons目录
-"autocmd BufNewFile *.php 0r ~/.vim/skeletons/php.skel
-"autocmd BufNewFile *.go 0r ~/.vim/skeletons/go.skel
-"autocmd BufNewFile *.html 0r ~/.vim/skeletons/tpl.skel
-"autocmd BufNewFile *.tpl 0r ~/.vim/skeletons/tpl.skel
-"autocmd BufNewFile *.json 0r ~/.vim/skeletons/json.skel
-"autocmd BufNewFile *.java 0r ~/.vim/skeletons/java.skel
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => taglist 右侧的函数列表树
@@ -186,8 +187,6 @@ let g:rehash256 = 1 " 256色风格
 "" let g:neocomplcache_enable_wildcard = 1 " 通配符
 "" let g:neocomplcache_enable_caching_message=1 "显示启动进度
 
-"" 跳过tpl，html 文件的语法检查，插件syntastic的配置
-"let g:syntastic_ignore_files=['.*\.tpl$', '.*\.html$']
 
 """YouCompleteMe智能补全工具
 ""let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'

@@ -8,7 +8,8 @@ nnoremap <C-d> :shel<CR>                                         " 定义退出v
 nnoremap <Leader>f :MBEToggle<cr>
 nnoremap <leader>a :MBEbn<cr>
 nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
-nnoremap <leader>mm :%s///g<CR>
+"nnoremap <leader>mm :%s///g<CR>
+noremap  <leader>mm :%s/<C-V><cr>//ge<cr>'tzt'm  
 nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存当前工作环境，撤销配置，在vim新版, 才有用
 nnoremap <leader>sr :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -29,6 +30,8 @@ nnoremap <leader>tag :!ctags -R<CR>
 
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+"map <F3> :TlistToggle<CR>      " taglist标签列表开关切换
+map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
 
 nnoremap <leader>tt :source g:vimrc_home.'/test/test.vim'<CR>
 
