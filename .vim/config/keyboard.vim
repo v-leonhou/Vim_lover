@@ -8,13 +8,19 @@ nnoremap <C-d> :shel<CR>                                         " 定义退出v
 nnoremap <Leader>f :MBEToggle<cr>
 nnoremap <leader>a :MBEbn<cr>
 nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
-nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
 noremap <C-J>     <C-W>j
 noremap <C-K>     <C-W>k
 noremap <C-H>     <C-W>h
 noremap <C-L>     <C-W>l
 noremap <C-TAB>   <C-W>w
 noremap <C-S-TAB> <C-W>W
+
+
+
+" map php-doc key inoremap:插入模式 nnoremap:命令行模式 vnoremap:视图模式
+"inoremap <C-M> <ESC> :call PhpDocSingle()<CR>i
+"nnoremap <C-M> :call PhpDocSingle()<CR>
+"vnoremap <C-M> :call PhpDocSingle()<CR>
 
 "nnoremap <leader>mm :%s///g<CR>
 noremap  <leader>mm :%s/<C-V><cr>//ge<cr>'tzt'm  

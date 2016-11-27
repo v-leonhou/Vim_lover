@@ -24,9 +24,9 @@ set cursorline                      " 高亮显示当前行
 set cursorcolumn                    " 高亮显示当前列
 set cc=130                          " 红线位置
 set lbr                             " 智能换行
-"set wrap                            " wrap(弯曲),允许BundlebackspaceBundle和光标键跨越行边界(不建议), 自动换行, 可以按BundlebackspaceBundle可以自动到头了可以换行
+set wrap                            " wrap(弯曲),允许BundlebackspaceBundle和光标键跨越行边界(不建议), 自动换行, 可以按BundlebackspaceBundle可以自动到头了可以换行
 set textwidth=0						" 总不自动换行, 它的简写Bundleset tw = xxx 表示文本宽度是多少自动换行(回车效果)
-set nowrap                          " 屏幕显示不下不自动折行 
+"set nowrap                          " 屏幕显示不下不自动折行 
 
 " 编辑习惯
 set encoding=utf-8   "设置BundleviBundle打开文件字符编码
@@ -50,8 +50,9 @@ set matchtime=2                     " 匹配括号高亮的时间（单位是十
 set completeopt=menuone,longest     " 打开文件类型检测, 加了这句才可以用智能补全, 弹出提示框
 
 set magic                           " 选择括号自动匹对闭合的括号
+set sm                              " 括号自动匹配
 
-set wildignore=.svn,.git,*.swp,*.bak,*~,*.o,*.a  " 用于目录插件BundleNERD_treeBundle上，打开目录忽略这些文件
+set wildignore=.lo,.svn,.git,*.swp,*.bak,*~,*.o,*.a  " 用于目录插件BundleNERD_treeBundle上，打开目录忽略这些文件
 set tags=tags                      " 开启Bundletags，方便自动提示,以及搜索,必开 ,因为Bundletaglist(左边的函数列表插件)用的到
 set bsdir=buffer                    " 用于目录插件上，打开目录为当前文件目录
 set autochdir                       " 用于目录插件上，比如Bundletaglist(函数列表插件)自动加载文件中的子目录（比如加载变量目录下面的所有变量）

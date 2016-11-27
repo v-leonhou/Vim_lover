@@ -1,7 +1,6 @@
 # Vim_lover
 women
 This repos is my vim learning road.......
-
 全局变量
     let g:my_vimrc = $HOME.'\vimfiles\vimrc'
     let g:my_vimrc_home = $HOME.'\vimfiles'

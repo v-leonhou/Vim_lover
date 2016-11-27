@@ -4,42 +4,36 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "autocmd VimEnter * NERDTree "启动Vim时自动打开nerdtree
 let g:NERDTreeWinPos          = "left"
-let g:NERDTreeWinSize         = 20
+let NERDTreeShowHidden=1            " 显示隐藏文件
+let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件
+let g:NERDTreeWinSize         = 15 
 let g:NERDTreeShowLineNumbers = 1
-let NERDTreeQuitOnOpen     = 1
 let NERDTreeMouseMode       = 1
 let NERDChristmasTree       = 1
 let NERDTreeRespectWildIgnore = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeAutoDeleteBuffer=1      " 重名名文件后自动删除打开的buffer
+"let NERDTreeQuitOnOpen     = 1
 "let NERDTreeChDirMode        = 2   "打开书签时，自动将Vim的pwd设为打开的目录，如果你的项目有tags文件，你会发现这个命令很有帮助
 
 " plugin tagbar 
-let g:tagbar_width = 6
+let g:tagbar_width = 3
 let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
-
-"设置NERDTree的快捷键ctr+n,NERDTree相关命令
-let NERDTreeWinSize=16
-let NERDTreeShowHidden=1            " 显示隐藏文件
-let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件
-let NERDTreeMinimalUI=0             " 子窗口不显示冗余帮助信息
-let NERDTreeWinPos="left"           " 设置子窗口位置
 
 " minibuffer插件
 "let g:miniBufExplBRSplit = 1        " 创建新的buffer时从下方或者右边创建 
 let g:miniBufExplAutoStart=1        " 自动打开buffer
 let g:miniBufExplBuffersNeeded = 0  " 默认需要两个buffer时才会打开MBE，开启此选项后会跳过个数检查
 let g:miniBufExplCycleArround = 1   " buffer循环
-let g:miniBufExplDebugMode  = 1      " 输出minibuffer的错误日志 
 let g:did_minibufexplorer_syntax_inits = 1
-"hi MBEVisibleActiveChanged guibg=darkblue ctermbg=darkblue termbg=white
-hi link  MBEVisibleActiveChanged Error
+hi MBEVisibleActiveChanged guibg=red ctermbg=3 "termbg=4
+"hi link  MBEVisibleActiveChanged Error
 
 
 " vim-powerline 插件快捷键
-let g:solarized_termcolors=16       " powerline 插件状态栏风格
-let g:Powerline_colorsscheme='molokai'        " powerline 设置状态栏主题风格
+"let g:solarized_termcolors=16       " powerline 插件状态栏风格
+"let g:Powerline_colorsscheme='molokai'        " powerline 设置状态栏主题风格
 
 " molokai 主题
 let g:molokai_original = 1
