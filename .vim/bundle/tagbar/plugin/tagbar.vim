@@ -116,6 +116,7 @@ augroup TagbarSession
     autocmd SessionLoadPost * nested call tagbar#RestoreSession()
 augroup END
 
+
 " Commands {{{1
 command! -nargs=0 Tagbar              call tagbar#ToggleWindow()
 command! -nargs=0 TagbarToggle        call tagbar#ToggleWindow()
