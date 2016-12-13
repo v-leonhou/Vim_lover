@@ -13,12 +13,15 @@ let NERDChristmasTree       = 1
 let NERDTreeRespectWildIgnore = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeAutoDeleteBuffer=1      " 重名名文件后自动删除打开的buffer
+let NERDTreeRespectWildIgnore=1
 "let NERDTreeQuitOnOpen     = 1
 "let NERDTreeChDirMode        = 2   "打开书签时，自动将Vim的pwd设为打开的目录，如果你的项目有tags文件，你会发现这个命令很有帮助
 
 " plugin tagbar 
+map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
 let g:tagbar_width = 3
-let g:tagbar_autoclose = 1
+let g:tagbar_left=0
+"let g:tagbar_autoclose = 1
 let g:tagbar_autofocus = 1
 
 " minibuffer插件

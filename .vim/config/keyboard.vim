@@ -28,6 +28,8 @@ nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存�
 nnoremap <leader>sr :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+nnoremap <leader>sudo :w !sudo tee %                             " 保存只读文件
+
 nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>
@@ -44,9 +46,8 @@ nnoremap <leader>tag :!ctags -R<CR>
 
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
-"map <F3> :TlistToggle<CR>      " taglist标签列表开关切换
 map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
-
+"map <F4> :TlistToggle<CR>      " taglist标签列表开关切换
 nnoremap <leader>tt :source g:vimrc_home.'/test/test.vim'<CR>
 
 
