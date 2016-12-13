@@ -67,13 +67,13 @@ set wildmenu                        " vim 自身命令行模式智能补全
 set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,help,options,resize,winpos,winsize" " 保存当前编辑环境选项
 
 " 代码折叠
-"set foldcolumn=0                    " 设置折叠的宽度, 就是折叠之后到底显示几行
-"setlocal foldlevel=10               " 折叠层级, 最多最外层这贴包含多少个折叠
+set foldenable                      " 允许自动折叠
+set foldmethod=syntax               " 基于语法折叠
+setlocal foldlevel=10               " 折叠层级,最多最外层这贴包含多少个折叠
+set foldcolumn=2                    " 设置折叠的宽度, 就是折叠之后到底显示几行
 "set foldmethod=marker              " 设置折叠的函数为Bundlemarker， markerviBundle自带
-"set foldenable                      " 允许自动折叠
-"set nofoldenable                   " 启动BundlevimBundle时关闭折叠代码
-"set foldmethod=syntax               " 基于语法折叠
 "set foldmethod=indent               " 基于缩进折叠
+"set nofoldenable                   " 启动BundlevimBundle时关闭折叠代码
 
     " 撤销缓存目录,撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
 if exists("&undodir")
@@ -98,16 +98,21 @@ Plugin 'php.vim'
 Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
 Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
-Plugin 'plasticboy/vim-markdown'               
 Plugin 'shawncplus/phpcomplete.vim'               
-Plugin 'vim-scripts/Pydiction'                  "dictBundle补全
 Plugin 'vim-scripts/indentLine.vim'         "对齐线
+Plugin 'plasticboy/vim-markdown'               
+"Plugin 'vim-scripts/Pydiction'                  "dictBundle补全
 "Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 call vundle#end()            " 必须 
 
 exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/func.vim')
 exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/plugin.vim')
 exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/keyboard.vim')
+
+" tags文件处理
+if getfsize("vimscript")>0
+    source vimscript
+endif
 
 "au BufWritePost * call system("ctags -R")  " 保存文件后自动生成Plugintag
 au BufWritePost $MYVIMRC source $MYVIMRC "vimrcBundle保存自动生效，重启Bundlevim
