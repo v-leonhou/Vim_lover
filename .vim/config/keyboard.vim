@@ -30,7 +30,8 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 nnoremap <leader>sudo :w !sudo tee %                             " 保存只读文件
 
-nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>
+" Replace 参数一表示是否确认 参数二是否全局
+nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>           
 nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
@@ -46,12 +47,23 @@ nnoremap <leader>tag :!ctags -R<CR>
 
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
+" tagbar快捷键
 map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
-"map <F4> :TlistToggle<CR>      " taglist标签列表开关切换
-nnoremap <leader>tt :source g:vimrc_home.'/test/test.vim'<CR>
+"<1>     把光标移到变量名或函数名上，然后按下"Ctrl-]"
+"Ctrl-o"或“Ctrl-t”退回原来的地方。 
+"Ctrl-i 返回下一个操作位置
+"<2>     在函数中移动光标
+"[{     转到上一个位于第一列的"{"
+"}]     转到下一个位于第一列的"{"
+"{      转到上一个空行
+"}      转到下一个空行 （[ and  ] 也分别是两个指令）
+"gd   转到当前光标所指的局部变量的定义 大写D跳转到全局变量
+"*      转到当前光标所指的单词下一次出现的地方
+"#     转到当前光标所指的单词上一次出现的地方k
 
-
-
-
-
-
+" 自动折叠
+" zc[C]关闭折叠 
+" zo[O]打开折叠
+" za互相切换
+" zM折叠所有
+" "zR取消所有折叠
