@@ -4378,6 +4378,7 @@ function! s:debug(msg) abort
     endif
 endfunction
 
+
 " Autoload functions {{{1
 
 " Wrappers {{{2

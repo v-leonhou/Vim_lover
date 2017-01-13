@@ -70,11 +70,11 @@ set sessionoptions="blank,buffers,globals,localoptions,tabpages,sesdir,folds,hel
 
 " 代码折叠
 set foldenable                      " 允许自动折叠
-set foldmethod=syntax               " 基于语法折叠
+"set foldmethod=syntax               " 基于语法折叠
 setlocal foldlevel=10               " 折叠层级,最多最外层这贴包含多少个折叠
 set foldcolumn=2                    " 设置折叠的宽度, 就是折叠之后到底显示几行
 "set foldmethod=marker              " 设置折叠的函数为Bundlemarker， markerviBundle自带
-"set foldmethod=indent               " 基于缩进折叠
+set foldmethod=indent               " 基于缩进折叠
 "set nofoldenable                   " 启动BundlevimBundle时关闭折叠代码
 
     " 撤销缓存目录,撤销文件, 当关闭文件之后，重新打开还可以无限撤销到最原始的文件
@@ -88,9 +88,9 @@ endif
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 " vundleBundle管理插件
-let &rtp = g:my_vimrc_home.'/.vim,'.g:my_vimrc_home.'/.vim/bundle/Vundle.vim,'.$VIMRUNTIME
+let &rtp = g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim,'.$VIMRUNTIME
 call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
-call vundle#begin(g:my_vimrc_home.'/.vim/bundle/')  " vundleBundle插件管理器
+call vundle#begin(g:my_vimrc_home.'/vim/bundle/')  " vundleBundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
@@ -99,7 +99,7 @@ Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'php.vim'
 Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
-Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
+"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 Plugin 'shawncplus/phpcomplete.vim'               
 Plugin 'vim-scripts/indentLine.vim'         "对齐线
 Plugin 'plasticboy/vim-markdown'               
@@ -107,9 +107,9 @@ Plugin 'plasticboy/vim-markdown'
 "Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 call vundle#end()            " 必须 
 
-exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/func.vim')
-exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/plugin.vim')
-exec 'source '.fnameescape(g:my_vimrc_home.'/.vim/config/keyboard.vim')
+exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
+exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/plugin.vim')
+exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/keyboard.vim')
 
 " tags文件处理
 if getfsize("vimscript")>0

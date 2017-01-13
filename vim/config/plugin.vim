@@ -3,7 +3,7 @@
 " => nerdtree 左侧目录树
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "autocmd VimEnter * NERDTree "启动Vim时自动打开nerdtree
-let g:NERDTreeWinPos          = "left"
+let g:NERDTreeWinPos          = "right"
 let NERDTreeShowHidden=1            " 显示隐藏文件
 let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件
 let g:NERDTreeWinSize         = 15 
@@ -19,10 +19,18 @@ let NERDTreeRespectWildIgnore=1
 
 " plugin tagbar 
 map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
-let g:tagbar_width = 3
-let g:tagbar_left=0
-"let g:tagbar_autoclose = 1
+autocmd FileType c,cpp,php,javascript,js nested :TagbarOpen
+"autocmd FileType .php nested :call tagbar#autoopen(0)
+"autocmd VimEnter * nested :TagbarOpen
+let g:tagbar_width = 20
+let g:tagbar_show_linenumbers = 2
+"let g:tagbar_iconchars = ['+','_']  "(default on Linux and Mac OS X)
+let g:tagbar_left=1
+let g:tagbar_autoshowtag = 1
 let g:tagbar_autofocus = 1
+"let g:tagbar_previewwin_pos = "splitbelow"
+"let g:tagbar_autopreview = 1
+"let g:tagbar_autoclose = 1
 
 " minibuffer插件
 "let g:miniBufExplBRSplit = 1        " 创建新的buffer时从下方或者右边创建 

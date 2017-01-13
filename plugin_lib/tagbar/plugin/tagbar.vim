@@ -4,7 +4,7 @@
 " Author:      Jan Larres <jan@majutsushi.net>
 " Licence:     Vim licence
 " Website:     http://majutsushi.github.com/tagbar/
-" Version:     2.7
+" Version:     2.6.1
 " Note:        This plugin was heavily inspired by the 'Taglist' plugin by
 "              Yegappan Lakshmanan and uses a small amount of code from it.
 "
@@ -48,41 +48,31 @@ function! s:init_var(var, value) abort
     endif
 endfunction
 
-function! s:setup_options() abort
-    if !exists('g:tagbar_vertical') || g:tagbar_vertical == 0
-        let previewwin_pos = 'topleft'
-    else
-        let previewwin_pos = 'rightbelow vertical'
-    endif
-    let options = [
-        \ ['autoclose', 0],
-        \ ['autofocus', 0],
-        \ ['autopreview', 0],
-        \ ['autoshowtag', 0],
-        \ ['case_insensitive', 0],
-        \ ['compact', 0],
-        \ ['expand', 0],
-        \ ['foldlevel', 99],
-        \ ['hide_nonpublic', 0],
-        \ ['indent', 2],
-        \ ['left', 0],
-        \ ['previewwin_pos', previewwin_pos],
-        \ ['show_visibility', 1],
-        \ ['show_linenumbers', 0],
-        \ ['singleclick', 0],
-        \ ['sort', 1],
-        \ ['systemenc', &encoding],
-        \ ['vertical', 0],
-        \ ['width', 40],
-        \ ['zoomwidth', 1],
-        \ ['silent', 0],
-    \ ]
+let s:options = [
+    \ ['autoclose', 0],
+    \ ['autofocus', 0],
+    \ ['autopreview', 0],
+    \ ['autoshowtag', 0],
+    \ ['compact', 0],
+    \ ['expand', 0],
+    \ ['foldlevel', 99],
+    \ ['hide_nonpublic', 0],
+    \ ['indent', 2],
+    \ ['left', 0],
+    \ ['previewwin_pos', 'topleft'],
+    \ ['show_visibility', 1],
+    \ ['show_linenumbers', 0],
+    \ ['singleclick', 0],
+    \ ['sort', 1],
+    \ ['systemenc', &encoding],
+    \ ['width', 40],
+    \ ['zoomwidth', 1],
+\ ]
 
-    for [opt, val] in options
-        call s:init_var(opt, val)
-    endfor
-endfunction
-call s:setup_options()
+for [opt, val] in s:options
+    call s:init_var(opt, val)
+endfor
+unlet s:options
 
 if !exists('g:tagbar_iconchars')
     if has('multi_byte') && has('unix') && &encoding == 'utf-8' &&
@@ -93,43 +83,39 @@ if !exists('g:tagbar_iconchars')
     endif
 endif
 
-function! s:setup_keymaps() abort
-    let keymaps = [
-        \ ['jump',          '<CR>'],
-        \ ['preview',       'p'],
-        \ ['previewwin',    'P'],
-        \ ['nexttag',       '<C-N>'],
-        \ ['prevtag',       '<C-P>'],
-        \ ['showproto',     '<Space>'],
-        \ ['hidenonpublic', 'v'],
-        \
-        \ ['openfold',      ['+', '<kPlus>', 'zo']],
-        \ ['closefold',     ['-', '<kMinus>', 'zc']],
-        \ ['togglefold',    ['o', 'za']],
-        \ ['openallfolds',  ['*', '<kMultiply>', 'zR']],
-        \ ['closeallfolds', ['=', 'zM']],
-        \ ['nextfold',      'zj'],
-        \ ['prevfold',      'zk'],
-        \
-        \ ['togglesort',            's'],
-        \ ['togglecaseinsensitive', 'i'],
-        \ ['toggleautoclose',       'c'],
-        \ ['zoomwin',               'x'],
-        \ ['close',                 'q'],
-        \ ['help',                  ['<F1>', '?']],
-    \ ]
+let s:keymaps = [
+    \ ['jump',          '<CR>'],
+    \ ['preview',       'p'],
+    \ ['previewwin',    'P'],
+    \ ['nexttag',       '<C-N>'],
+    \ ['prevtag',       '<C-P>'],
+    \ ['showproto',     '<Space>'],
+    \ ['hidenonpublic', 'v'],
+    \
+    \ ['openfold',      ['+', '<kPlus>', 'zo']],
+    \ ['closefold',     ['-', '<kMinus>', 'zc']],
+    \ ['togglefold',    ['o', 'za']],
+    \ ['openallfolds',  ['*', '<kMultiply>', 'zR']],
+    \ ['closeallfolds', ['=', 'zM']],
+    \
+    \ ['togglesort',      's'],
+    \ ['toggleautoclose', 'c'],
+    \ ['zoomwin',         'x'],
+    \ ['close',           'q'],
+    \ ['help',            ['<F1>', '?']],
+\ ]
 
-    for [map, key] in keymaps
-        call s:init_var('map_' . map, key)
-        unlet key
-    endfor
-endfunction
-call s:setup_keymaps()
+for [map, key] in s:keymaps
+    call s:init_var('map_' . map, key)
+    unlet key
+endfor
+unlet s:keymaps
 
 augroup TagbarSession
     autocmd!
     autocmd SessionLoadPost * nested call tagbar#RestoreSession()
 augroup END
+
 
 " Commands {{{1
 command! -nargs=0 Tagbar              call tagbar#ToggleWindow()
