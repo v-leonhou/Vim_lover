@@ -7,8 +7,9 @@ syntax enable                       "开启语法高亮
 colorscheme molokai 
 "colorscheme solarized
 "set background=dark
-set guifont=YaHei\ Consolas\ Hybrid\ 11.5
-"set gfn=Monaco:h10 	            "修改字体和大小                                           
+"set guifont=YaHei\ Consolas\ Hybrid\ 11.5
+set guifont=Consolas
+"set gfn=Monaco:h10 	            " 修改字体和大小                                           
 set helplang=cn						" 显示中文帮助
 set laststatus=2                    " 总是显示状态栏
 set fileformats=unix                " 设置文件格式
@@ -31,6 +32,7 @@ set textwidth=0						" 总不自动换行, 它的简写Bundleset tw = xxx 表示
 " 编辑习惯
 set encoding=utf-8   "设置BundleviBundle打开文件字符编码
 set fileencoding=utf-8
+scriptencoding utf-8
 set termencoding=utf-8
 set expandtab                       " 使用空格代替Bundletab , 如果要使用BundleindentBundle插件一定要开启这个
 "set noexpandtab                    " 不要用空格代替制表符, set expandtab 用空格代替制表符
