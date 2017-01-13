@@ -55,7 +55,7 @@ set magic                           " 选择括号自动匹对闭合的括号
 set sm                              " 括号自动匹配
 
 set wildignore=*.lo,.svn,.git/*,*.swp,*.bak,*~,*.o,*.a  " 用于目录插件BundleNERD_treeBundle上，打开目录忽略这些文件
-set tags=tags                      " 开启Bundletags，方便自动提示,以及搜索,必开 ,因为Bundletaglist(左边的函数列表插件)用的到
+set tags=tags;/                      " 开启Bundletags，方便自动提示,以及搜索,必开 ,因为Bundletaglist(左边的函数列表插件)用的到
 set bsdir=buffer                    " 用于目录插件上，打开目录为当前文件目录
 set autochdir                       " 用于目录插件上，比如Bundletaglist(函数列表插件)自动加载文件中的子目录（比如加载变量目录下面的所有变量）
 set dy=lastline                     " 当文件太长时，打开不会显示@@符号的字样
@@ -89,7 +89,8 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 " vundleBundle管理插件
 let &rtp = g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim,'.$VIMRUNTIME
-call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
+"let &rtp += g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim'*/
+"call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
 call vundle#begin(g:my_vimrc_home.'/vim/bundle/')  " vundleBundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree' 
@@ -99,12 +100,12 @@ Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'php.vim'
 Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
-"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 Plugin 'shawncplus/phpcomplete.vim'               
 Plugin 'vim-scripts/indentLine.vim'         "对齐线
 Plugin 'plasticboy/vim-markdown'               
-"Plugin 'vim-scripts/Pydiction'                  "dictBundle补全
-"Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
+Plugin 'majutsushi/tagbar'               
+Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
+"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 call vundle#end()            " 必须 
 
 exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
