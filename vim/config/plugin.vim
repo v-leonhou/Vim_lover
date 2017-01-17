@@ -19,7 +19,7 @@ let NERDTreeRespectWildIgnore=1
 
 " plugin tagbar 
 map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
-autocmd FileType c,cpp,php,javascript,js nested :TagbarOpen
+"autocmd FileType c,cpp,php,javascript,js nested :TagbarOpen
 "autocmd FileType .php nested :call tagbar#autoopen(0)
 "autocmd VimEnter * nested :TagbarOpen
 let g:tagbar_width = 20
