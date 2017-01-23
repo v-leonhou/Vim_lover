@@ -94,18 +94,20 @@ let &rtp = g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim,'.$VI
 call vundle#begin(g:my_vimrc_home.'/vim/bundle/')  " vundleBundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree' 
+Plugin 'php-vim/phpcd.vim' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
-Plugin 'php.vim'
 Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
-Plugin 'shawncplus/phpcomplete.vim'               
 Plugin 'vim-scripts/indentLine.vim'         "对齐线
 Plugin 'plasticboy/vim-markdown'               
 Plugin 'majutsushi/tagbar'               
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
-"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
+Plugin 'php.vim'
+Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
+Plugin 'vim-scripts/sketch.vim'
+Plugin 'vim-scripts/php-doc.vim'
 call vundle#end()            " 必须 
 
 exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
