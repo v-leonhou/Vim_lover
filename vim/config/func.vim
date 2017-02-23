@@ -1,6 +1,6 @@
 " 定义php语法函数
 function! AddPHPFuncList()
-    let &dict= g:my_vimrc_home."/.vim/php_funclist.txt" 
+    let &dict= g:my_vimrc_home."/vim/php_funclist.txt" 
     set complete-=k complete+=k
 endfunction
     

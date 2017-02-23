@@ -8,7 +8,7 @@ colorscheme molokai
 "colorscheme solarized
 "set background=dark
 "set guifont=YaHei\ Consolas\ Hybrid\ 11.5
-set guifont=Consolas
+"set guifont=Consolas
 "set gfn=Monaco:h10 	            " 修改字体和大小                                           
 set helplang=cn						" 显示中文帮助
 set laststatus=2                    " 总是显示状态栏
@@ -105,9 +105,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'               
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'php.vim'
-Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 Plugin 'vim-scripts/sketch.vim'
-Plugin 'pdv.vim'
+"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
+"Plugin 'pdv.vim'
 "Plugin 'php-doc.vim'
 call vundle#end()            " 必须 
 

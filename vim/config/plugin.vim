@@ -37,9 +37,16 @@ let g:tagbar_autofocus = 1
 let g:miniBufExplAutoStart=1        " 自动打开buffer
 let g:miniBufExplBuffersNeeded = 0  " 默认需要两个buffer时才会打开MBE，开启此选项后会跳过个数检查
 let g:miniBufExplCycleArround = 1   " buffer循环
+hi MBENormal               guifg=#808080 guibg=fg
+hi MBESelecting            guifg=#BEEF13 guibg=fg
+hi MBEChanged              guifg=#CD5907 guibg=fg
+hi MBEVisibleNormal        guifg=#5DC2D6 guibg=fg
+hi MBEVisibleChanged       guifg=#F1266F guibg=fg
+hi MBEVisibleActiveNormal  guifg=#A6DB29 guibg=fg
 let g:did_minibufexplorer_syntax_inits = 1
-hi MBEVisibleActiveChanged guibg=red ctermbg=3 "termbg=4
 "hi link  MBEVisibleActiveChanged Error
+"hi MBEVisibleActiveChanged guibg=red ctermbg=3 "termbg=4
+"hi MBEChanged guibg=darkblue ctermbg=darkblue termbg=white
 
 
 " vim-powerline 插件快捷键
