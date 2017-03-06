@@ -104,7 +104,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'               
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'vim-scripts/sketch.vim'
-Plugin 'lambdalisue/gina.vim'
+"Plugin 'lambdalisue/gina.vim'
+Plugin 'lambdalisue/vim-gita'
 Plugin 'php-vim/phpcd.vim' 
 Plugin 'lvht/phpfold.vim'
 Plugin 'alvan/vim-php-manual'
@@ -115,7 +116,6 @@ Plugin '2072/PHP-Indenting-for-VIm'
 "Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 "Plugin 'pdv.vim'
 "Plugin 'php-doc.vim'
-"Plugin 'lambdalisue/vim-gita'
 call vundle#end()            " 必须 
 
 exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')

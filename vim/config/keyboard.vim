@@ -14,15 +14,15 @@ noremap <C-L>     <C-W>l
 noremap <C-TAB>   <C-W>w
 noremap <C-S-TAB> <C-W>W
 
-noremap <leader>gs :Gina! status <CR>
-noremap <leader>gd :Gina! diff<CR>
-noremap <leader>gc :Gina! commit<CR>
-noremap <leader>gb :Gina! blame<CR>
-noremap <leader>gp :Gina! push<CR>
+noremap <leader>gs :Gita status <CR>
+noremap <leader>gd :Gita diff<CR>
+noremap <leader>gc :Gita commit<CR>
+noremap <leader>gb :Gita blame<CR>
+noremap <leader>gp :Gita push<CR>
 
 
 " map php-doc key inoremap:插入模式 nnoremap:命令行模式 vnoremap:视图模式
-inoremap <C-M> <ESC> :call PhpDocDefault()<CR>i
+inoremap <C-M> <ESC> :call PhpDoc()<CR>i
 nnoremap <C-M> :call PhpDocSingle()<CR>
 "vnoremap <C-M> :call PhpDocSingle()<CR>
 
