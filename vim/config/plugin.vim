@@ -61,9 +61,10 @@ let g:molokai_original = 1
 let g:syntastic_ignore_files=['.*\.tpl$', '.*\.html$']
 
 "" 4.snipMate变量定义
-let g:snips_author  = "leonhou <764436364@qq.com>"
+"let g:snips_author  = "leonhou <764436364@qq.com>"
+let g:pdv_cfg_Author = "leonhou <764436364@qq.com>"
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => autocmd 自动加载
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "au FileType php setlocal dict+=~/.vim/swoole_funclist.dict
@@ -81,6 +82,17 @@ au BufRead,BufNewFile *.json set filetype=json
 "" 新建文件模板, 创建一个skeletons目录
 exec 'autocmd BufNewFile *.php 0r '.g:my_vimrc_home.'/.vim/skeletons/php.skel'
 exec 'autocmd BufNewFile *.json 0r '.g:my_vimrc_home.'/.vim/skeletons/json.skel'
+
+"function! PhpSyntaxOverride()
+  "hi! def link phpDocTags  phpDefine
+  "hi! def link phpDocParam phpType
+"endfunction
+
+"augroup phpSyntaxOverride
+  "autocmd!
+  "autocmd FileType php call PhpSyntaxOverride()
+"augroup END
+
 "autocmd BufNewFile *.go 0r ~/.vim/skeletons/go.skel
 "autocmd BufNewFile *.html 0r ~/.vim/skeletons/tpl.skel
 "autocmd BufNewFile *.tpl 0r ~/.vim/skeletons/tpl.skel

@@ -1,13 +1,12 @@
 let mapleader=";"                                           " 定义快捷键的前缀键
 
 " ctr键前缀
-map <C-n> :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
 nnoremap <C-d> :shel<CR>                                         " 定义退出vim快捷键
 
 " 显示/隐藏 MiNiBufExplorer窗口
-nnoremap <Leader>f :MBEToggle<cr>
-nnoremap <leader>a :MBEbn<cr>
-nnoremap <leader>d :MBEbp<cr>                                    " buffer 切换快捷键
+nnoremap <leader>bn :MBEbn<cr>
+nnoremap <leader>bp :MBEbp<cr>                                    " buffer 切换快捷键
 noremap <C-J>     <C-W>j
 noremap <C-K>     <C-W>k
 noremap <C-H>     <C-W>h
@@ -15,11 +14,16 @@ noremap <C-L>     <C-W>l
 noremap <C-TAB>   <C-W>w
 noremap <C-S-TAB> <C-W>W
 
+noremap <leader>gs :Gina! status <CR>
+noremap <leader>gd :Gina! diff<CR>
+noremap <leader>gc :Gina! commit<CR>
+noremap <leader>gb :Gina! blame<CR>
+noremap <leader>gp :Gina! push<CR>
 
 
 " map php-doc key inoremap:插入模式 nnoremap:命令行模式 vnoremap:视图模式
-"inoremap <C-M> <ESC> :call PhpDocSingle()<CR>i
-"nnoremap <C-M> :call PhpDocSingle()<CR>
+inoremap <C-M> <ESC> :call PhpDocDefault()<CR>i
+nnoremap <C-M> :call PhpDocSingle()<CR>
 "vnoremap <C-M> :call PhpDocSingle()<CR>
 
 "nnoremap <leader>mm :%s///g<CR>
@@ -37,8 +41,8 @@ nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with:
 nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
 nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>
 
-nnoremap <leader>nl :nohl<cr>     " 取消高亮显示
-nnoremap <leader>q :q<cr>
+nnoremap <leader>th :nohl<cr>     " 取消高亮显示
+nnoremap q :q<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>tag :!ctags -R<CR>
 
@@ -48,7 +52,7 @@ nnoremap <leader>tag :!ctags -R<CR>
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 
 " tagbar快捷键
-map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换
+map <F2> :TagbarToggle<CR>      " taglist标签列表开关切换
 "<1>     把光标移到变量名或函数名上，然后按下"Ctrl-]"
 "Ctrl-o"或“Ctrl-t”退回原来的地方。 
 "Ctrl-i 返回下一个操作位置
