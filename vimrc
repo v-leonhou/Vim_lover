@@ -105,13 +105,6 @@ Plugin 'majutsushi/tagbar'
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'vim-scripts/sketch.vim'
 "Plugin 'lambdalisue/gina.vim'
-Plugin 'lambdalisue/vim-gita'
-Plugin 'php-vim/phpcd.vim' 
-Plugin 'lvht/phpfold.vim'
-Plugin 'alvan/vim-php-manual'
-Plugin 'php.vim'
-Plugin 'tomphp/vim-phpdoc'
-Plugin '2072/PHP-Indenting-for-VIm'
 "Plugin 'StanAngeloff/php.vim'
 "Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 "Plugin 'pdv.vim'
