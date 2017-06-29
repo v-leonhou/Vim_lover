@@ -22,8 +22,8 @@ noremap <leader>gp :Gita push<CR>
 
 
 " map php-doc key inoremap:插入模式 nnoremap:命令行模式 vnoremap:视图模式
-inoremap <C-M> <ESC> :call PhpDoc()<CR>i
-nnoremap <C-M> :call PhpDocSingle()<CR>
+"inoremap <C-M> <ESC> :call PhpDoc()<CR>i
+"nnoremap <C-M> :call PhpDocSingle()<CR>
 "vnoremap <C-M> :call PhpDocSingle()<CR>
 
 "nnoremap <leader>mm :%s///g<CR>
@@ -45,6 +45,9 @@ nnoremap <leader>th :nohl<cr>     " 取消高亮显示
 nnoremap q :q<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>tag :!ctags -R<CR>
+inoremap jk <esc>
+
+
 
  "<leader>cc 注释选中文本
  "<Leader>cu 取消选中注释

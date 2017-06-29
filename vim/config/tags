@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+<C-H>	keyboard.vim	/^noremap <C-H>     <C-W>h$/;"	m
+<C-J>	keyboard.vim	/^noremap <C-J>     <C-W>j$/;"	m
+<C-K>	keyboard.vim	/^noremap <C-K>     <C-W>k$/;"	m
+<C-L>	keyboard.vim	/^noremap <C-L>     <C-W>l$/;"	m
+<C-S-TAB>	keyboard.vim	/^noremap <C-S-TAB> <C-W>W$/;"	m
+<C-TAB>	keyboard.vim	/^noremap <C-TAB>   <C-W>w$/;"	m
+<C-d>	keyboard.vim	/^nnoremap <C-d> :shel<CR>                                         " 定义退出vim快捷键$/;"	m
+<F2>	keyboard.vim	/^map <F2> :TagbarToggle<CR>      " taglist标签列表开关切换$/;"	m
+<F3>	keyboard.vim	/^map <F3> :NERDTreeToggle<CR>$/;"	m
+<F4>	plugin.vim	/^map <F4> :TagbarToggle<CR>      " taglist标签列表开关切换$/;"	m
+<Leader>R	keyboard.vim	/^nnoremap <Leader>R :call Replace(0,0,input('Replace '.expand('<cword>').' with: '))<CR>           $/;"	m
+<Leader>rc	keyboard.vim	/^nnoremap <Leader>rc :call Replace(1,0,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rcw	keyboard.vim	/^nnoremap <Leader>rcw :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rw	keyboard.vim	/^nnoremap <Leader>rw :call Replace(0,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<Leader>rwc	keyboard.vim	/^nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with: '))<CR>$/;"	m
+<leader>bn	keyboard.vim	/^nnoremap <leader>bn :MBEbn<cr>$/;"	m
+<leader>bp	keyboard.vim	/^nnoremap <leader>bp :MBEbp<cr>                                    " buffer 切换快捷键$/;"	m
+<leader>gb	keyboard.vim	/^noremap <leader>gb :Gita blame<CR>$/;"	m
+<leader>gc	keyboard.vim	/^noremap <leader>gc :Gita commit<CR>$/;"	m
+<leader>gd	keyboard.vim	/^noremap <leader>gd :Gita diff<CR>$/;"	m
+<leader>gp	keyboard.vim	/^noremap <leader>gp :Gita push<CR>$/;"	m
+<leader>gs	keyboard.vim	/^noremap <leader>gs :Gita status <CR>$/;"	m
+<leader>mm	keyboard.vim	/^noremap  <leader>mm :%s\/<C-V><cr>\/\/ge<cr>'tzt'm  $/;"	m
+<leader>sc	keyboard.vim	/^nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存当前工作环境，撤销配置，在vim新版, 才有用$/;"	m
+<leader>sr	keyboard.vim	/^nnoremap <leader>sr :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境$/;"	m
+<leader>sudo	keyboard.vim	/^nnoremap <leader>sudo :w !sudo tee %                             " 保存只读文件$/;"	m
+<leader>sv	keyboard.vim	/^nnoremap <leader>sv :source $MYVIMRC<cr>$/;"	m
+<leader>tag	keyboard.vim	/^nnoremap <leader>tag :!ctags -R<CR>$/;"	m
+<leader>th	keyboard.vim	/^nnoremap <leader>th :nohl<cr>     " 取消高亮显示$/;"	m
+<leader>w	keyboard.vim	/^nnoremap <leader>w :w<cr>$/;"	m
+AddPHPFuncList	func.vim	/^function! AddPHPFuncList()$/;"	f
+NERDChristmasTree	plugin.vim	/^let NERDChristmasTree       = 1$/;"	v
+NERDTreeAutoDeleteBuffer	plugin.vim	/^let NERDTreeAutoDeleteBuffer=1      " 删除文件时自动删除buffer文件$/;"	v
+NERDTreeAutoDeleteBuffer	plugin.vim	/^let NERDTreeAutoDeleteBuffer=1      " 重名名文件后自动删除打开的buffer$/;"	v
+NERDTreeMinimalUI	plugin.vim	/^let NERDTreeMinimalUI = 1$/;"	v
+NERDTreeMouseMode	plugin.vim	/^let NERDTreeMouseMode       = 1$/;"	v
+NERDTreeRespectWildIgnore	plugin.vim	/^let NERDTreeRespectWildIgnore = 1$/;"	v
+NERDTreeRespectWildIgnore	plugin.vim	/^let NERDTreeRespectWildIgnore=1$/;"	v
+NERDTreeShowHidden	plugin.vim	/^let NERDTreeShowHidden=1            " 显示隐藏文件$/;"	v
+Replace	func.vim	/^function! Replace(confirm,wholeword,replace)$/;"	f
+g:NERDTreeShowLineNumbers	plugin.vim	/^let g:NERDTreeShowLineNumbers = 1$/;"	v
+g:NERDTreeWinPos	plugin.vim	/^let g:NERDTreeWinPos          = "right"$/;"	v
+g:NERDTreeWinSize	plugin.vim	/^let g:NERDTreeWinSize         = 15 $/;"	v
+g:did_minibufexplorer_syntax_inits	plugin.vim	/^let g:did_minibufexplorer_syntax_inits = 1$/;"	v
+g:miniBufExplAutoStart	plugin.vim	/^let g:miniBufExplAutoStart=1        " 自动打开buffer$/;"	v
+g:miniBufExplBuffersNeeded	plugin.vim	/^let g:miniBufExplBuffersNeeded = 0  " 默认需要两个buffer时才会打开MBE，开启此选项后会跳过个数检查$/;"	v
+g:miniBufExplCycleArround	plugin.vim	/^let g:miniBufExplCycleArround = 1   " buffer循环$/;"	v
+g:molokai_original	plugin.vim	/^let g:molokai_original = 1$/;"	v
+g:pdv_cfg_Author	plugin.vim	/^let g:pdv_cfg_Author = "leonhou <764436364@qq.com>"$/;"	v
+g:syntastic_ignore_files	plugin.vim	/^let g:syntastic_ignore_files=['.*\\.tpl$', '.*\\.html$']$/;"	v
+g:tagbar_autofocus	plugin.vim	/^let g:tagbar_autofocus = 1$/;"	v
+g:tagbar_autoshowtag	plugin.vim	/^let g:tagbar_autoshowtag = 1$/;"	v
+g:tagbar_left	plugin.vim	/^let g:tagbar_left=1$/;"	v
+g:tagbar_show_linenumbers	plugin.vim	/^let g:tagbar_show_linenumbers = 2$/;"	v
+g:tagbar_width	plugin.vim	/^let g:tagbar_width = 20$/;"	v
+jk	keyboard.vim	/^inoremap jk    $/;"	m
+mapleader	keyboard.vim	/^let mapleader=";"                                           " 定义快捷键的前缀键$/;"	v
+q	keyboard.vim	/^nnoremap q :q<cr>$/;"	m

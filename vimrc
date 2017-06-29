@@ -104,16 +104,22 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'majutsushi/tagbar'               
 Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
 Plugin 'vim-scripts/sketch.vim'
-"Plugin 'lambdalisue/gina.vim'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'lvht/phpcd.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+
 "Plugin 'StanAngeloff/php.vim'
+"Plugin 'lambdalisue/gina.vim'
 "Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 "Plugin 'pdv.vim'
 "Plugin 'php-doc.vim'
 call vundle#end()            " 必须 
+filetype plugin on
+filetype plugin indent on
 
-exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
-exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/plugin.vim')
-exec 'source '.fnameescape(g:my_vimrc_home.'/vim/config/keyboard.vim')
+exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
+exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/plugin.vim')
+exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/keyboard.vim')
 
 " tags文件处理
 if getfsize("vimscript")>0
