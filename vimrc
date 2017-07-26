@@ -3,13 +3,7 @@ filetype plugin on                  " 根据侦测到的不同类型加载对应
 filetype plugin indent on           " Vundle 必须开启, 加载BundlevimBundle自带和插件相应的语法和文件类型相关脚本
 syntax enable                       "开启语法高亮
 
-"colorscheme phd
 colorscheme molokai 
-"colorscheme solarized
-"set background=dark
-"set guifont=YaHei\ Consolas\ Hybrid\ 11.5
-"set guifont=Consolas
-"set gfn=Monaco:h10 	            " 修改字体和大小                                           
 set helplang=cn						" 显示中文帮助
 set laststatus=2                    " 总是显示状态栏
 set fileformats=unix                " 设置文件格式
@@ -55,7 +49,7 @@ set magic                           " 选择括号自动匹对闭合的括号
 set sm                              " 括号自动匹配
 
 set wildignore=*.lo,.svn,.git/*,*.swp,*.bak,*~,*.o,*.a  " 用于目录插件BundleNERD_treeBundle上，打开目录忽略这些文件
-set tags=tags;/                      " 开启Bundletags，方便自动提示,以及搜索,必开 ,因为Bundletaglist(左边的函数列表插件)用的到
+set tags=./tags;/                      " 开启Bundletags，方便自动提示,以及搜索,必开 ,因为Bundletaglist(左边的函数列表插件)用的到
 set bsdir=buffer                    " 用于目录插件上，打开目录为当前文件目录
 set autochdir                       " 用于目录插件上，比如Bundletaglist(函数列表插件)自动加载文件中的子目录（比如加载变量目录下面的所有变量）
 set dy=lastline                     " 当文件太长时，打开不会显示@@符号的字样
@@ -88,44 +82,42 @@ endif
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 " vundleBundle管理插件
-let &rtp = g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim,'.$VIMRUNTIME
-"let &rtp += g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim'*/
-"call pathogen#infect()	     " 加载插件管理器插件 pathogen.vim 
+let &rtp .= g:my_vimrc_home.'/vim,'.g:my_vimrc_home.'/vim/bundle/Vundle.vim'
 call vundle#begin(g:my_vimrc_home.'/vim/bundle/')  " vundleBundle插件管理器
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree' 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'fholgado/minibufexpl.vim'
-Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 Plugin 'jiangmiao/auto-pairs'       " 自动补全括号
 Plugin 'scrooloose/syntastic'            " 保存时语法检查
-Plugin 'vim-scripts/indentLine.vim'         "对齐线
-Plugin 'plasticboy/vim-markdown'               
 Plugin 'majutsushi/tagbar'               
-Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
+Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'vim-scripts/sketch.vim'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'lvht/phpcd.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'lambdalisue/gina.vim'
+Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'stephpy/vim-phpdoc'
+Plugin 'Yggdroot/indentLine'         "对齐线
 
-"Plugin 'StanAngeloff/php.vim'
-"Plugin 'lambdalisue/gina.vim'
-"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
-"Plugin 'pdv.vim'
+"Plugin 'stephpy/vim-php-cs-fixer'
+"Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
+"Plugin 'vim-scripts/indentLine.vim'         "对齐线
+"Plugin 'ianva/vim-youdao-translater'
+"Plugin 'Lokaltog/vim-powerline'                " 美化状态栏
 "Plugin 'php-doc.vim'
+"Plugin 'lvht/phpcd.vim'
+"Plugin 'plasticboy/vim-markdown'               
+"Plugin 'StanAngeloff/php.vim'
+"Plugin 'vim-scripts/taglist.vim'            " 右边生成函数树
 call vundle#end()            " 必须 
-filetype plugin on
-filetype plugin indent on
 
 exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
 exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/plugin.vim')
 exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/keyboard.vim')
 
-" tags文件处理
-if getfsize("vimscript")>0
-    source vimscript
-endif
-
 "au BufWritePost * call system("ctags -R")  " 保存文件后自动生成Plugintag
-au BufWritePost $MYVIMRC source $MYVIMRC "vimrcBundle保存自动生效，重启Bundlevim
+au BufWritePost vimrc source $MYVIMRC "vimrcBundle保存自动生效，重启Bundlevim
 au FileType php call AddPHPFuncList() 
+runtime! ftplugin/man.vim
+set ffs=unix,dos

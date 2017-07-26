@@ -22,11 +22,11 @@ noremap <leader>gp :Gita push<CR>
 
 
 " map php-doc key inoremap:插入模式 nnoremap:命令行模式 vnoremap:视图模式
-"inoremap <C-M> <ESC> :call PhpDoc()<CR>i
+nnoremap <C-M> <ESC> :call PhpDoc()<CR>i
 "nnoremap <C-M> :call PhpDocSingle()<CR>
 "vnoremap <C-M> :call PhpDocSingle()<CR>
 
-"nnoremap <leader>mm :%s///g<CR>
+"nnoremap <leader>mm :%s///g<CR>
 noremap  <leader>mm :%s/<C-V><cr>//ge<cr>'tzt'm  
 nnoremap <leader>sc :mksession! my.vim<cr> :wviminfo! my.viminfo<cr>   " 保存当前工作环境，撤销配置，在vim新版, 才有用
 nnoremap <leader>sr :source my.vim<cr> :rviminfo my.viminfo<cr>        " 恢复快捷键 恢复环境
@@ -44,7 +44,7 @@ nnoremap <Leader>rwc :call Replace(1,1,input('Replace '.expand('<cword>').' with
 nnoremap <leader>th :nohl<cr>     " 取消高亮显示
 nnoremap q :q<cr>
 nnoremap <leader>w :w<cr>
-nnoremap <leader>tag :!ctags -R<CR>
+nnoremap <leader>tag :!phpctags -R<CR>
 inoremap jk <esc>
 
 
