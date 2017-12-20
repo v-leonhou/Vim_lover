@@ -3,7 +3,6 @@ filetype plugin on                  " 根据侦测到的不同类型加载对应
 filetype plugin indent on           " Vundle 必须开启, 加载BundlevimBundle自带和插件相应的语法和文件类型相关脚本
 syntax enable                       "开启语法高亮
 
-colorscheme molokai 
 set helplang=cn						" 显示中文帮助
 set laststatus=2                    " 总是显示状态栏
 set fileformats=unix                " 设置文件格式
@@ -116,8 +115,9 @@ exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/func.vim')
 exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/plugin.vim')
 exe 'source '.fnameescape(g:my_vimrc_home.'/vim/config/keyboard.vim')
 
+colorscheme molokai 
 "au BufWritePost * call system("ctags -R")  " 保存文件后自动生成Plugintag
-au BufWritePost vimrc source $MYVIMRC "vimrcBundle保存自动生效，重启Bundlevim
+"au BufWritePost vimrc source $MYVIMRC "vimrcBundle保存自动生效，重启Bundlevim
 au FileType php call AddPHPFuncList() 
 runtime! ftplugin/man.vim
 set ffs=unix,dos
