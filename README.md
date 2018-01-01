@@ -1,9 +1,5 @@
 # Vim_lover
-women
-This repos is my vim learning road.......
-全局变量
-    let g:my_vimrc = $HOME.'\vimfiles\vimrc'
-    let g:my_vimrc_home = $HOME.'\vimfiles'
+开箱即用，非常简单实用的配置，安装基本的插件，使用直接将项目中的.vimrc替换家目录下的.vimrc，安装vundle插件，然后打开vim :PluginInstall就好了
 
 2. 如何保存当前编辑环境，下次打开文件直接vi直接打开相同位置
 3. 有时候打开文件，总是出现scrach窗口，非得重新打开vim才可以使用minibuffer的快捷键
