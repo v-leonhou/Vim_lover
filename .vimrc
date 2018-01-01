@@ -7,8 +7,8 @@ if has('gui_running') && has('gui_win32')
     set guifont = Bitstream_Vera_Sans_Mono:h11:cANSI " 英文字体
     set guifontwide = simhei:h11:cGB2312 " 英文字体
 elseif has('unix')
-    let g:my_vimrc = '/vagrant/data/Vim_lover/vimrc'
-    let g:my_vimrc_home = '/vagrant/data/Vim_lover'
+    let g:my_vimrc = $HOME.'/Vim_lover/vimrc'
+    let g:my_vimrc_home = $HOME.'/Vim_lover'
 endif
 
-source /vagrant/data/Vim_lover/vimrc
+source $HOME/Vim_lover/vimrc
