@@ -98,6 +98,7 @@ Plugin 'lambdalisue/gina.vim'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'stephpy/vim-phpdoc'
 Plugin 'Yggdroot/indentLine'         "对齐线
+Plugin 'tomasr/molokai'
 
 "Plugin 'stephpy/vim-php-cs-fixer'
 "Plugin 'nathanaelkane/vim-indent-guides'       " 可是化相同的代码缩进
